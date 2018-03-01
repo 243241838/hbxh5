@@ -1,0 +1,183 @@
+@charset "utf-8";
+@import "../../../assets/scss/usage/layout/reset.scss";
+@import "../../../assets/scss/usage/layout/common.scss";
+@import "../../../assets/fonts/iconfont.css";
+.isWeiXin{
+    padding-top:0 !important;
+}
+body{
+    position: relative;
+}
+.container{
+    background: #fff;
+    padding:0.88rem 0.36rem 0;
+    .nav{
+        font-size:0.36rem;
+        height: 0.98rem;
+        line-height: 0.98rem;
+        .nav-item{
+            text-align: center;
+            &.on{
+                color: #2dce8f;
+            }
+        }
+        .line{
+            margin-top: 0.17rem;
+            height: 0.64rem;
+            width: 0.02rem;
+            @include border(0 1px 0 0, #e3e3e3, solid);
+        }
+    }
+}
+.search{
+    height: 1.18rem;
+    background: #e3e3e3;
+    > div{
+        position:relative;
+        height:0.66rem;
+        width:100%;
+        padding:0 0.36rem;
+        color:#5a5e5c;
+        .search-icon-box {
+            position: absolute;
+            padding-left:0.22rem;
+            padding-right: 0.1rem;
+            background: #fff;
+            @include border-radius(0.33rem 0 0 0.33rem);
+            .search-icon{
+                color:#c4cac7;
+                line-height: 0.66rem;
+                font-size:0.24rem;
+            }
+            &.text-center{
+                padding-left:2.88rem;
+            }
+            i{
+                position: relative;
+                z-index: 3;
+            }
+        }
+        .close-icon{
+            position:absolute;
+            z-index: 10;
+            right: 1.42rem;
+            line-height: 0.66rem;
+            color:#c4cac7;
+        }
+        .button{
+            position:absolute;
+            right: 0.36rem;
+            border:0;
+            font-size: 0.32rem;
+            color:#2dce8f;
+            line-height: 0.66rem;
+        }
+        input{
+            position: relative;
+            z-index: 2;
+            background: #fff;
+            width:100%;
+            height:0.66rem;
+            border:0;
+            font-size:0.26rem;
+            line-height: 0.36rem;
+            @include border-radius(0.33rem);
+            text-indent: 0.6rem;
+            padding-right: 0.6rem;
+            &.text-center{
+                text-indent: 3.24rem;
+            }
+        }
+    }
+    &.on{
+        >div{
+            padding:0 1.2rem 0 0.36rem;
+        }
+    }
+}
+.list{
+    background: #fff;
+    padding:0.62rem 0.36rem 0.18rem;
+    li {
+        .title{
+            .zimu{
+                display: inline-block;
+                width:0.5rem;
+                height: 0.36rem;
+                font-size:0.36rem;
+                line-height: 0.36rem;
+                color:#2ece90;
+            }
+            .line{
+                margin-top:0.18rem;
+                margin-right: 0.26rem;
+                @include border(1px 0 0 0, #e3e3e3, solid);
+            }
+        }
+        .item{
+            padding-left:0.5rem;
+            height:0.84rem;
+            line-height: 0.84rem;
+            font-size:0.32rem;
+            color:#484c4b;
+        }
+    }
+}
+.zhezhao{
+    position: fixed;
+    z-index: 8;
+    top: 3.04rem;
+    width:100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+    &.isWeiXin{
+        top: 2.64rem;
+    }
+}
+.yeji{
+    .head{
+        background: #f5f5f5;
+        padding:0.36rem 0.36rem 0;
+        height: 0.9rem;
+        font-size:0.24rem;
+        color:#a8afac;
+    }
+    .item{
+        background: #fff;
+        height: 1.58rem;
+        padding:0 0.36rem;
+        .img{
+            margin-top:0.34rem;
+            width:0.88rem;
+            height: 0.88rem;
+            @include border(1px, #e3e3e3, solid, 0.24rem);
+            img{
+                width:0.88rem;
+                height: 0.88rem;
+                @include border(1px, #e3e3e3, solid, 0.24rem);
+            }
+        }
+        .carNumber{
+            padding-left:0.38rem;
+            color:#484c4a;
+            font-size:0.32rem;
+            line-height: 1.58rem;
+        }
+        .money{
+            font-size:0.24rem;
+            color: #ff7d37;
+            p{
+                padding-right: 0.22rem;
+                &.name{
+                    margin-bottom: 0.08rem;
+                }
+            }
+        }
+        .nextIcon{
+            font-size:0.2rem;
+            color:#e3e3e3;
+            line-height: 1.58rem;
+        }
+    }
+}

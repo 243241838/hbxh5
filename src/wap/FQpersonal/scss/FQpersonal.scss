@@ -1,0 +1,95 @@
+@charset "utf-8";
+@import "../../../assets/scss/usage/layout/reset.scss";
+@import "../../../assets/scss/usage/layout/common.scss";
+@import "../../../assets/fonts/iconfont.css";
+$padding:0.36rem;
+#body{
+	height:13.68rem;
+	overflow: hidden;
+}
+#head{
+	width:100%;
+	height:4.09rem;
+	position: relative;
+	background:url(../images/head.png) no-repeat center;
+	background-size:cover;
+	margin-top:0.88rem;
+	&.isWeixin{
+		margin-top:0;
+	}
+	a{
+		display: block;
+		margin-bottom:0.28rem;
+	}
+	.img{
+		// display: inline-block;
+		width:1.25rem;
+		height:1.25rem;
+		@include border-radius(50%);
+        margin-bottom: 0.3rem;
+		background: url('../images/img.png') no-repeat center center;
+		background-size: cover;
+	}
+	.name{
+		font-size:0.32rem;
+		color:#ffffff;
+	}
+	.set{
+        position: absolute;
+		right:$padding;
+		top:0.2rem;
+		.iconfont{
+			font-size:0.44rem;
+			color:#fff;
+		}
+
+	}
+}
+.list{
+	width:100%;
+	padding-left:$padding;
+	background:#fff;
+	.item{
+		width:100%;
+		line-height: 1.14rem;
+		@include border(0 0 1px 0, #e3e3e3, solid);
+		&.last{
+            @include border(0,#e3e3e3, solid);
+        }
+		&.margin_top{
+			margin-top:0.26rem;
+			margin-bottom:0.6rem;
+		}
+		.flex{
+			.iconfont{
+				color:#2dce8f;
+				font-size:0.44rem;
+				margin-right:0.3rem;
+			}
+			span{
+				color:#484c4b;
+				font-size:0.28rem;
+			}
+		}
+		.icon{
+			margin-right:$padding;
+			.iconfont{
+				color:#e3e3e3;
+				font-size:0.24rem;
+			}
+		}
+	}
+	a{
+		display: block;
+	}
+}
+.footer{
+	width:3.78rem;
+	margin:0 auto 0.6rem;
+	line-height: 0.88rem;
+	background: #ffffff;
+	color:#2dce8f;
+	font-size:0.36rem;
+	text-align: center;
+	@include border(1px, #2dce8f, solid, 0.1rem);
+}

@@ -1,0 +1,150 @@
+@charset "utf-8";
+@import "../../../assets/scss/usage/layout/reset.scss";
+@import "../../../assets/scss/usage/layout/common.scss";
+@import "../../../assets/fonts/iconfont.css";
+.isShow{
+    padding-top:0.88rem;
+}
+input{
+    color:#5a5e5c;
+}
+.text{
+    width:100%;
+    height:18.44rem;
+    background:url(../images/background.jpg) no-repeat center;
+    background-size:100% 100%;
+    padding:7.72rem 0.36rem 0;
+}
+//信息填写
+.message{
+    width:100%;
+    height:4.74rem;
+    background: #fff;
+    @include border-radius(0.1rem);
+    margin-bottom:0.16rem;
+    .item{
+        width:100%;
+        height:1.185rem;
+        @include border(0 0 1px 0,#f2f2f2,solid);
+        .left{
+            width:1.02rem;
+            padding-left:0.27rem;
+            .iconfont{
+                font-size:0.42rem;
+                color:#c5cbc7;
+            }
+        }
+        .right{
+            height:100%;
+            input{
+                border:0;
+                outline:none;
+                width:90%;
+                font-size:0.28rem;
+                line-height: 0.36rem; 
+                padding-top:0.01rem;
+            }
+            >div:first-child{
+                margin-right:0.88rem;
+            }
+            >div{
+               .iconfont{
+                   color: #a8afac;
+                   &.orange{
+                       color:#ff7d37;
+                   }
+               }
+               span{
+                   font-size:0.26rem;
+                   margin-left:0.2rem;
+                   &.orange{
+                       color:#ff7d37;
+                   }
+               }
+            }
+        }
+        .getcode{
+            font-size:0.28rem;
+            color:#a8afac;
+            padding-right:0.26rem;
+            .orange{
+                color:#ff7d37;
+            }
+        }
+    }
+    .noborder{
+        @include border(0 0 0 0,#f2f2f2,solid);
+    }
+}
+//车险到期时间
+.carEndTime{
+    width:100%;
+    height:1.18rem;
+    background: #fff;
+    @include border-radius(0.1rem);
+    background: #fff;
+    position: relative;
+    margin-bottom:0.62rem;
+    .left{
+        width:2.35rem;
+        font-size:0.28rem;
+        color:#5a5e5c;
+    }
+    .icon{
+        margin-right:0.3rem;
+        position: absolute;
+        height:100%;
+        right:0;
+        .iconfont{
+               font-size:0.245rem;
+               color:#e3e3e3;
+        }
+    }
+    input{
+        font-size:0.28rem;
+        // line-height: 0.28rem;
+        line-height: 0.36rem; 
+    }
+    //时间控件
+    .datepicker {
+        // position: relative;
+        input{
+            width:100%;
+        }
+    }
+    .calendar {
+        left: 60%;
+        margin-top:-6rem;
+        @media screen and (max-width: 320px) {
+             margin-top:-7rem;
+        }
+        @media screen and (min-width: 768px) {
+             margin-top:-1rem;
+        }
+        margin-left: -4.3rem;
+        width:6rem!important;
+        font-size:0.24rem;
+    }
+}
+//提交按钮
+.btn{
+    width:100%;
+    height:0.88rem;
+    background:#e3e3e3;
+    color:#fff;
+    font-size:0.36rem;
+    @include border-radius(0.1rem);
+    margin-bottom:0.64rem;
+    &.yellow{
+        background: #ffdf01;
+        color:#673230;
+    }
+}
+//活动规则
+.bottom{
+    p{
+        font-size:0.24rem;
+        color:#fff;
+        line-height: 0.36rem;
+    }
+}

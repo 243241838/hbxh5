@@ -1,0 +1,155 @@
+@charset "utf-8";
+@import "../../../assets/scss/usage/layout/reset.scss";
+@import "../../../assets/scss/usage/layout/common.scss";
+@import "../../../assets/fonts/iconfont.css";
+$padding: 0.36rem;
+.add_list{
+	width:100%;
+    margin-top:0.26rem;
+	padding-left:$padding;
+	background: #fff;
+	margin-bottom:0.62rem;
+	.item{
+		@include border(0 0 1px 0, #e3e3e3, solid);
+		margin-bottom:0.1rem;
+		color:#484c4b;
+		width:100%;
+		// height:1.12rem;
+		height:1.22rem;
+		padding-right:$padding;
+		.text{
+			color:#aaa;
+			line-height: 1.12rem;
+			@include ellipsis();
+		}
+		.left{
+			font-size:0.28rem;
+			width:2.24rem;
+		}
+		.right{
+			height:100%;
+			input{
+				 font-size:0.26rem;
+				 line-height: 0.4rem;
+				 display: block;
+				 height:100%;
+				 border:0;
+				 width:90%;
+			}
+			textarea{
+				padding-top:0.35rem;
+				font-size:0.26rem;
+				 border:0;
+				 width:90%;
+				 resize : none;
+			}
+			span{
+				 font-size:0.26rem;
+			}
+			.iconfont{
+				font-size:0.2rem;
+				color:#e3e3e3;
+			}
+		}
+	}
+	.noborder{
+		@include border(0, #e3e3e3, solid);
+	}
+}
+.add_oli{
+	width:100%;
+	background: #fff;
+	height:1.12rem;
+	color:#484c4b;
+	padding:0 $padding;
+	margin-bottom:0.6rem;
+	.left{
+		font-size:0.28rem;
+		width:2.24rem;
+	}
+	.iconfont{
+		font-size:0.5rem;
+		color:#e3e3e3;
+	}
+	.icon{
+		color:#2ece90;
+	}
+}
+.add_footer{
+	padding:0 $padding;
+	.btn{
+		width:100%;
+		height:0.9rem;
+		line-height: 0.9rem;
+		text-align: center;
+		background: #2ece90;
+		font-size:0.36rem;
+		@include border-radius(0.08rem);
+		color:#fff;
+	}
+}
+
+.address{
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0;
+	z-index:999;
+	background: rgba(0,0,0,.5);
+	color:#484c4b;
+	.bottom{
+		height:8.32rem;
+		width:100%;
+		background: #fff;
+		position:absolute;
+		bottom:0;
+		@include border-radius(0.06rem 0.06rem 0 0);
+		font-size:0.28rem;
+		.select{
+			height:1.8rem;
+			@include border(0 0 1px 0,#e3e3e3,solid);
+			.title{
+				height:0.88rem;
+				text-align: center;
+				line-height: 0.88rem;
+				color:#a8aeac;
+				font-size:0.28rem;
+				padding-right: 0.36rem;
+				.icon-close{
+					float:right;
+				}
+			}
+			.select-list{
+				height:0.92rem;
+				width:100%;
+				padding-left:0.5rem;
+				.select-item{
+					width:1.62rem;
+					height:100%;
+					line-height: 0.92rem;
+					.item{
+						@include ellipsis(1.62rem);
+						display:inline-block;
+						height:0.92rem;
+						@include border(0,#2ece90,solid);
+						&.item-green{
+							color:#2ece90;
+							@include border(0 0 0.08rem 0,#2ece90,solid);
+							width:auto;
+						}
+					}
+				}
+			}
+		}
+		.scroll{
+			width:100%;
+			height:6.52rem;
+			padding: 0.2rem 0.5rem;
+			@include overflow(scroll);
+			.cell{
+				height:0.8rem;
+				line-height: 0.8rem;
+			}
+		}
+	}
+}

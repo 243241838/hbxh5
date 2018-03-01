@@ -1,0 +1,222 @@
+@charset 'utf-8';
+@import '../../../assets/scss/usage/layout/reset.scss';
+@import '../../../assets/scss/usage/layout/common.scss';
+@import '../../../assets/fonts/iconfont.css';
+$green: #2dce8f;
+$tgray: #5a5e5c;
+$background: #f5f5f5;
+$itemMt: 12px;
+$itemPb: 18px;
+$bradius: 5px;
+$fz12: 12px;
+$fz14: 14px;
+$fz16: 16px;
+html
+{
+    background-color: #f5f5f5;
+}
+.pageview{
+    font-size:0.26rem;
+}
+img{
+    width: 100%;
+}
+#body{
+    width:100%;
+    height:100%;
+    @include overflow(scroll);
+}
+.iconfont
+{
+    font-family: 'iconfont' !important;
+    font-style: normal;
+
+    font-size:0.32rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.green{
+    color: $green;
+}
+.red{
+    color: #ff4242;
+}
+.initialize
+{
+    vertical-align: middle;
+
+    border: 0 none;
+    background: none;
+}
+.ui-btn-group{
+    overflow: hidden;
+    padding: 0.62rem 0.3rem;
+    position: relative;
+    #file1{
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        left:0;
+        top:0;
+        opacity:0;
+    }
+}
+.ui-btn{
+    font-size:0.36rem;
+    line-height: 0.8rem;
+    display: block;
+    width: 100%;
+    height: 0.8rem;
+    text-align: center;
+    @include border(0,#e3e3e3,solid,0.1rem);
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    color: #fff;
+    background-color: $green;
+}
+.item-title{
+    color: #a8afac;
+    line-height: 0.4rem;
+    position: relative;
+    padding: 0.36rem 0.3rem 0.26rem;
+    font-size:0.24rem;
+}
+.car-insure{
+    background-color: #fff;
+    // padding-left: 0.3rem;
+    .bottom{
+        width:100%;
+        height:0.27rem;
+        background: #f5f5f5;
+    }
+}
+.cinsure-item{
+    @include border(0 0 1px 0,#e3e3e3,solid);
+    @include flexbox();
+    @include align-items(center);
+    // width:100%;
+    margin-left:0.3rem;
+    height:1.12rem;
+    padding-right:0.36rem;
+    line-height: 1.12rem;
+    color: $tgray;
+    line-height: 0.6rem;
+    height: 1rem;
+    position: relative;
+    &.no_border{
+        @include border(0,#e3e3e3,solid);
+    }
+    .title{
+        float: left;
+        width: 35%;
+        height: 0.6rem;
+        font-size:0.28rem;
+        &.userInfo_phone{
+            color:#a8afac;
+        }
+    }
+    .content{
+        float: left;
+        color:#484c4a;
+        height: 0.6rem;
+    }
+    input{
+        border: 0 none;
+        @extend .initialize;
+        line-height: 0.37rem;
+        width:100%;
+        font-size:0.26rem;
+    }
+    .userInfo_phone{
+        color: #a8afac;
+    }
+    .camera{
+        position: absolute;
+        right: 0;
+        top: 0.2rem;
+        padding: 0 0.3rem;
+        color: $tgray;
+    }
+    .content-tip{
+        // width:90%;
+        input{
+            width:4rem;
+        }
+    }
+    .content-tip::after{
+        position: absolute;
+        right: 0.3rem;
+        top: 0.2rem;
+        @extend .iconfont;
+        content: '\e612';
+        color: #e3e3e3;
+        font-size:0.28rem;
+    }
+}
+.cinsure-item:last-child{
+    @include border(0,#e3e3e3,solid);
+}
+.gray-bg{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 10;
+    font-size:0.24rem;
+    overflow: scroll;
+    &.gray-bg1{
+        background-color: rgba(0,0,0,0.9);
+    }
+    .big{
+        font-size:0.32rem;
+        margin: 0.16rem 0;
+    }
+    img{
+        margin: 0.16rem 0 0.4rem;
+        width:5.68rem;
+        height:3.62rem;
+    }
+    &.gray-bg2{
+        img{
+            margin: 0.16rem 0 0.42rem;
+        }
+    }
+    .ui-btn-group{
+           margin-bottom:0.4rem;
+    }
+    .close{
+        font-size:0.52rem;
+        line-height: 0.52rem;
+    }
+    .start_img{
+        width:6.51rem;
+        height:3.41rem;
+        margin-top:0.51rem;
+        position: absolute;
+        top:0.21rem;
+        right:0;
+        // margin-left:1.21rem;
+        &.isWeiXin{
+            margin-top:1.2rem!important;
+        }
+        .start{
+            width:100%;
+            height:100%;
+        }
+        .start1{
+            width:1.65rem;
+            height:1rem;
+            position: absolute;
+            right:0;
+            top:0.5rem;
+        }
+    }
+}
+.example{
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0.6rem 0;
+}

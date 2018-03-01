@@ -1,0 +1,241 @@
+@charset 'utf-8';
+@import '../../../assets/scss/usage/layout/reset.scss';
+@import '../../../assets/scss/usage/layout/common.scss';
+@import '../../../assets/fonts/iconfont.css';
+$green: #2dce8f;
+$tgray: #a8afac;
+$background: #f5f5f5;
+$itemMt: 0.24rem;
+$itemPb: 0.36rem;
+$bradius: 0.1rem;
+$fz12: 0.24rem;
+$fz14: 0.28rem;
+$fz16: 0.32rem;
+html
+{
+    background-color: #f5f5f5;
+}
+img{
+    width: 100%;
+    height:2.26rem;
+    margin-top:0.88rem;
+    &.isWeiXin{
+        margin-top:0;
+    }
+}
+#body{
+}
+.time{
+    width:100%;
+    padding:0.36rem 0.26rem;
+    background: #fff;
+    .time_center{
+        width:100%;
+        height:1.35rem;
+        background:url(../images/jsp.jpg) no-repeat;
+        background-size:100% 100%;
+        @include border-radius(0.1rem);
+    }
+    .time_name{
+        font-size:0.38rem;
+        color:#fff;
+        text-align: center;
+        line-height: 0.72rem;
+    }
+    .time_d{
+        width:100%;
+        text-align: center;
+        b{
+            font-weight: normal;
+            color:#cb4119;
+            font-size:0.22rem;
+        }
+        span{
+            padding:0.04rem 0.08rem;
+            margin: 0 0.12rem;
+            display: inline-block;
+            color:#fff;
+            background:#cb4119;
+            @include border-radius(0.1rem);
+        }
+    }
+}
+.iconfont
+{
+    font-family: 'iconfont' !important;
+    font-style: normal;
+    font-size:$fz16;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.green{
+    color: $green;
+}
+.initialize
+{
+    vertical-align: middle;
+
+    border: 0 none;
+    background: none;
+}
+.car-info{
+    padding-left: 0.3rem;
+    background-color: #fff;
+    padding-top:0.17rem;
+}
+.car-item{
+    @include border(1px 0 0 0,#e3e3e3,solid);
+    padding-right:0.3rem;
+    color: $tgray;
+    height: 1.14rem;
+    line-height: 1.14rem;
+    .fr{
+        position:relative;
+        width:0.4rem;
+        height:100%;
+        .icon{
+            font-size:0.2rem;
+            color:#e3e3e3;
+            position:absolute;
+            right:0;
+        }
+        .select_op{
+            position: absolute;
+            display:inline-block;
+            width:1.14rem;
+            height:1.14rem;
+            right:0;
+            top:0;
+            opacity:0;
+            // background:red;
+            z-index:99;
+        }
+    }
+    .title{
+        float: left;
+        width: 25%;
+        height: 0.6rem;
+        font-size:0.28rem;
+    }
+    .content{
+        float: left;
+        color:#484c4a;
+        height: 0.6rem;
+        i{
+            @extend .initialize;
+            color: $tgray;
+        }
+    }
+    .content-select{
+        position: relative;
+        padding-right: 0.44rem;
+        display: inline-block;
+        height: 0.6rem;
+        select{
+            border: 0 none;
+        }
+    }
+    .content-select::after{
+        position: absolute;
+        right: 0;
+        top: 0;
+        @extend .iconfont;
+        content: '\e612';
+        color: #e3e3e3;
+        font-size:0.28rem;
+    }
+    .content-input{
+        border: 0 none;
+        font-size:0.26rem;
+    }
+    .choose{
+        color: $green;
+        font-size:0.28rem;
+    }
+}
+.car-item:first-child{
+    @include border(0,#e3e3e3,solid);
+}
+.ui-btn-group{
+    overflow: hidden;
+    margin-top:0.62rem;
+    padding: 0 0.3rem;
+}
+.ui-btn{
+    font-size:0.32rem;
+    line-height: 0.8rem;
+    display: block;
+    width: 100%;
+    height: 0.8rem;
+    text-align: center;
+    @include border(0,#e3e3e3,solid,0.1rem);
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    color: #fff;
+    background-color: $green;
+}
+.content-icensehead{
+    position: relative;
+    padding-right: 0.1rem;
+    display: inline-block;
+    font-size:0.26rem;
+}
+.choose-city{
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    .title{
+        text-align: center;
+        color: #000;
+        padding: 0.1rem 0;
+        .close{
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: inline-block;
+            width: 0.6rem;
+            height: 0.6rem;
+            line-height: 0.6rem;
+            color: $tgray;
+        }
+    }
+}
+.city-list{
+    @include border(0 0 1px 0,#e3e3e3,solid);
+}
+.city-item{
+    padding: 0.2rem 0.2rem 0.16rem 0.2rem;
+    display: inline-block;
+    @include border(0 0 2px 0,#fff,solid);
+}
+.city-item.cur{
+    color: $green;
+    @include border(0 0 2px 0,$green,solid);
+}
+.cityDetail-list{
+    max-height: 4rem;
+    overflow-y:scroll;
+}
+.cityDetail-item{
+    padding: 0.2rem;
+    i{
+        color: $green;
+        margin-left: 0.2rem;
+        font-size:0.24rem;
+    }
+}
+.cityDetail-item.cur{
+    color: $green;
+}
+// 下边车牌号修改
+.car_number{
+    .cityDetail-list{
+        padding:0.2rem 0;
+        .cityDetail-item{
+            line-height: 0.4rem;
+        }
+    }
+}

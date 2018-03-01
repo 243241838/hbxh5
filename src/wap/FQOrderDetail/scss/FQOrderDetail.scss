@@ -1,0 +1,176 @@
+@charset "utf-8";
+@import "../../../assets/scss/usage/layout/reset.scss";
+@import "../../../assets/scss/usage/layout/common.scss";
+@import '../../../assets/fonts/iconfont.css';
+.title{
+    padding:0 0.36rem;
+    height:0.84rem;
+    line-height: 0.84rem;
+    font-size:0.24rem;
+    color:#a8afac;
+}
+.list{
+    padding:0.15rem 0.36rem;
+    background: #fff;
+    color:#a8afac;
+    .item{
+        font-size:0.28rem;
+        line-height:0.52rem;
+        .left{
+            display: inline-block;
+            // width:1.6rem;
+            width:2.4rem;
+            &.gray{
+                color:#484c4a;
+            }
+        }
+        .center{
+            color:#484c4a;
+        }
+        .yellow{
+            color:#ff7d37;
+        }
+        .green{
+            color:#2dce8f;
+        }
+    }
+    .rem01{
+        height:0.1rem;
+        width:0;
+    }
+    .table{
+        color:#a8afac;
+        font-size:0.24rem;
+        @include border(1px,#e3e3e3,solid,0.12rem);
+        .row{
+            height:0.8rem;
+            line-height: 0.8rem;
+            @include border(0 0 1px 0,#e3e3e3,solid);
+            &.last{
+                @include border(0,#e3e3e3,solid);
+            }
+            .col{
+                height:0.8rem;
+                line-height: 0.8rem;
+                text-align: center;
+                font-size:0.24rem;
+                @include border(0 1px 0 0,#e3e3e3,solid);
+                &.last{
+                    @include border(0,#e3e3e3,solid);
+                }
+            }
+        }
+    }
+    .link{
+        color:#2dce8f;
+        line-height: 0.52rem;
+        padding-top:0.13rem;
+        font-size:0.26rem;
+        text-align: right;
+    }
+}
+.imgBox{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    z-index:10;
+    background: rgba(0,0,0,0.5);
+    img{
+        position:fixed;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        margin:auto;
+        border:0;
+        outline: 0;
+        max-width: 80%;
+    }
+}
+.description{
+    padding:0.26rem 0.36rem;
+    margin-bottom:1.2rem;
+    .icon-tishi{
+        color:#1ccf8d;
+        font-size:0.24rem;
+        margin-right: 0.24rem;
+    }
+    .content{
+        line-height: 0.44rem;
+        font-size:0.24rem;
+        color:#a8afac;
+    }
+    .phone{
+        padding-left:0.54rem;
+    }
+}
+footer{
+    position:fixed !important;
+    width:100%;
+    bottom:0;
+    background: #fff;
+    padding:0.24rem 0.36rem;
+    @include border(1px 0 0 0,#e3e3e3,solid);
+    .moneyBox{
+        font-size:0.24rem;
+        color:#ff7d29;
+        line-height:0.72rem;
+        .money{
+            font-size:0.32rem;
+        }
+        span{
+            position:relative;
+            top:0.02rem;
+            margin-right: 2px;
+        }
+    }
+    .button{
+        display: block;
+        width:1.7rem;
+        height:0.72rem;
+        line-height: 0.72rem;
+        @include border(1px,#a8afac,solid,0.12rem);
+        text-align: center;
+        font-size:0.32rem;
+        color:#5a5e5c;
+        &.last{
+            margin-left:0.26rem;
+        }
+    }
+    .green{
+        color:#2dce8f;
+        @include border(1px,#2dce8f,solid,0.12rem);
+    }
+    .gray{
+        @include border(0px,#484c4a,solid,0.12rem);
+        color:#fff;
+        background: #e3e3e3;
+    }
+    .FQmanageCustomer{
+        line-height: 0.72rem;
+        span{
+            font-size:0.36rem;
+            color: #ff7d29;
+            &.name{
+                font-size:0.24rem;
+                color: #a8aeac;
+            }
+        }
+    }
+}
+.time{
+    height:0.58rem;
+    width:100%;
+    padding-left: 0.36rem;
+    line-height: 0.58rem;
+    color: #5a5e5c;
+    background:#e3e3e3;
+    font-size:0.24rem;
+    span{
+        color: #ff4238;
+    }
+    b{
+        font-weight: normal;
+    }
+}

@@ -1,0 +1,85 @@
+@charset "utf-8";
+@import "../../common/common.scss";
+.location_list{
+	padding-top:0.26rem;
+	.item{
+		width:100%;
+		background:#fff;
+		padding-left:$padding;
+		padding-top:0.14rem;
+		margin-bottom:0.26rem;
+		> div {
+		   padding-right:$padding;
+	   }
+	   .name{
+		   font-size:0.28rem;
+		   line-height: 0.8rem;
+		   color:#484c4b;
+	   }
+		.location{
+			@include border(0 0 1px 0, #e3e3e3, solid);
+			font-size:0.28rem;
+			line-height: 0.4rem;
+			color:#484c4b;
+			padding-bottom:0.34rem;
+			@include wrap();
+		}
+		.edit{
+			width:100%;
+            height:0.9rem;
+			color:#a8aeac;
+			line-height: 0.9rem;
+			.left{
+				font-size:0.28rem;
+				img{
+					width:0.3rem;
+					height:0.3rem;
+			    }
+				span{
+					margin-left:0.28rem;
+				}
+			} 
+			.location_check{
+				color:#ff7d37;
+			}
+			.right{
+				font-size:0.28rem;
+				.fl{
+					span{
+						margin-right:0.47rem;
+					}
+				}
+				.iconfont{
+					font-size:0.28rem;
+					margin-right:0.15rem;
+				}
+			}
+			
+		}
+	}
+}
+.location_footer{
+    width:100%;
+	height:1.12rem;
+	line-height: 1.12rem;
+	text-align: center;
+	background: #2ece90;
+	position: fixed;
+	left:0;
+	bottom:0;
+	font-size:0.36rem;
+	color:#fff;
+	.btn{
+		display: inline-block;
+         span{
+		   margin-left:0.27rem;
+	     }
+		.iconfont{
+			font-size:0.34rem;
+		}
+	}
+}
+.location_body{
+    padding-bottom:1.12rem;
+    @include overflow(scroll);
+}

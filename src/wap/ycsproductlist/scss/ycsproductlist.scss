@@ -1,0 +1,96 @@
+@charset "utf-8";
+@import "../../../assets/scss/usage/layout/reset.scss";
+@import "../../../assets/scss/usage/layout/common.scss";
+.nav{
+    height: 0.82rem;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top:0.88rem;
+    z-index: 5;
+    &.isWeiXin{
+        top:0;
+    }
+}
+.type-content{
+   overflow-x: auto;
+   overflow-y: hidden;
+    height: 1.82rem;
+    width: 100%;
+    background: #fff;
+    .type-list{
+        width: 38.4rem;
+         li{
+            float: left;
+            padding:0 0.2rem;
+            line-height: 0.82rem;
+            text-align: center;
+            height:0.82rem;
+            font-size:0.28rem;
+            color: #484c4a;
+            @include border(0 0 0.08rem 0,#fff,solid);
+            &.cur{
+                color: #2dce8f;
+                @include border(0 0 0.08rem 0,#2dce8f,solid);
+            }
+        }
+    }
+}
+.list{
+    width:100%;
+    padding-top:0.2rem;
+    .item{
+        width:100%;
+        height:2.16rem;
+        background: #fff;
+        margin-bottom:0.25rem;
+        .left{
+            width:2.39rem;
+            position: relative;
+            img{
+                width:2.39rem;
+            }
+            div{
+                position: absolute;
+                bottom:0.54rem;
+                width:1.7rem;
+                height: 0.36rem;
+                line-height: 0.36rem;
+                background: #fff;
+                font-size:0.22rem;
+                color:#5a5e5c;
+                text-align: center;
+                left:0.35rem;
+                border-radius: 0.2rem;
+            }
+        }
+        .right{
+            padding:0.24rem 0 0 0.35rem;
+            .head{
+                font-size:0.32rem;
+                color:#484c4a;
+                line-height: 0.54rem;
+            }
+            .text{
+                font-size:0.22rem;
+                color:#a8afac;
+                line-height: 0.46rem;
+            }
+            .money{
+                font-size: 0.36rem;
+                .green1{
+                    font-size:0.34rem;
+                    color:#2dce8f;
+                }
+                .money1{
+                    color:#2dce8f;
+                }
+                .gray{
+                    font-size:0.34rem;
+                    color:#a8afac;
+                    line-height: 0.62rem;
+                }
+            }
+        }
+    }
+}

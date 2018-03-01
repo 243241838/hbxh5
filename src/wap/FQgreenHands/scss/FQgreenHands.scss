@@ -1,0 +1,49 @@
+@charset 'utf-8';
+@import '../../../assets/scss/usage/layout/reset.scss';
+@import '../../../assets/scss/usage/layout/common.scss';
+@import '../../../assets/fonts/iconfont.css';
+@import "../../../assets/scss/usage/layout/swiper.css";
+.swiper-container{
+    width:100%;
+    height:100%;
+    .swiper-wrapper{
+        width:100%;
+        height:100%;
+        .swiper-slide{
+            width:100%;
+            height:100%;
+            position: relative;
+            img{
+                width:100%;
+                height:100%;
+            }
+            >div{
+                position: absolute;
+                width:100%;
+                text-align: center;
+                bottom:0.2rem;
+                color:#fff;
+                text-shadow:0rem 0rem 0.1rem #333;
+                font-size:0.24rem;
+                line-height: 0.4rem;
+                >span{
+                    font-size:0.30rem;
+                    margin:0 0.1rem;
+                }
+            }
+        }
+    }
+}
+.swiper-button-prev, .swiper-button-next{
+    width:0.64rem;
+    height:0.64rem;
+    background: black;
+    @include border-radius(50%);
+    opacity: 0.5;
+    text-align: center;
+    line-height: 0.64rem;
+    .iconfont{
+        color:#fff;
+        font-size:0.3rem;
+    }
+}

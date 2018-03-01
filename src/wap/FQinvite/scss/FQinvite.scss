@@ -1,0 +1,27 @@
+@charset "utf-8";
+@import "../../../assets/scss/usage/layout/reset.scss";
+@import "../../../assets/scss/usage/layout/common.scss";
+@import "../../../assets/fonts/iconfont.css";
+.isShow{
+    padding-top:0.88rem;
+}
+.text{
+    width: 100%;
+    height:12.06rem;
+    background: url(../images/boy.jpg) no-repeat center;
+    background-size: 100% 100%;
+    border:0;
+    text-align:center;
+    padding-top:3.11rem;
+    &.isB{
+        background: url(../images/boy1.jpg) no-repeat center;
+        background-size: 100% 100%;
+    }
+    #qrcode{
+        padding-left:0.05rem;
+        img{
+            width:2.57rem;
+            height:2.57rem;
+        }
+    }
+}

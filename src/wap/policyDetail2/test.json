@@ -1,0 +1,172 @@
+{
+    "applicant": "456",
+    "applicantIdNo": "330621198903134674",
+    "applicantMobile": "13656714459",
+    "applicantType": "1",
+    "claimsURL": "",
+    "classId": "103249",
+    "classType": 1,
+    "discountAmount": "0",
+    "endTime": "2018-02-22 09:55:38",
+    "extraInfos": null,
+    "insureAmount": "0",
+    "insuredList": [
+        {
+            "benList": [],
+            "birthday": "",
+            "carInfo": {
+                "cityName": "杭州",
+                "engineNo": "123123",
+                "fuelType": "",
+                "licenseNo": "浙12345",
+                "noLicenseFlag": 0,
+                "registerDate": "2017-02-21",
+                "specialCarDate": "2017-02-28",
+                "specialCarFlag": 1,
+                "vehicleFrameNo": "12345",
+                "vehicleModel": "宝马"
+            },
+            "detailId": "140",
+            "email": "",
+            "gender": "男",
+            "idNo": "330621198903134673",
+            "idType": "1",
+            "insureCount": 1,
+            "insuredId": "140",
+            "insuredName": "123",
+            "insuredNamePinyin": "123",
+            "mobile": "",
+            "policyURL": "",
+            "relation": 1
+        }
+    ],
+    "insurerId": "1",
+    "insurerLogo": "",
+    "insurerName": "人保财险",
+    "insurerTels": "010-88888888",
+    "jqxEndTime": "",
+    "jqxStartTime": "",
+    "orderURL": "http://ebao.seaway.net.cn:18100/product_details.html#productDetails/1092",
+    "payAmount": "64700",
+    "paymentList": [
+        {
+            "payAmount": 51760,
+            "payTime": "2017-02-25 16:05:32",
+            "paymentName": "积分支付",
+            "refundAccount": "",
+            "refundAmount": 0,
+            "refundOrganization": "",
+            "refundTime": "",
+            "tradeId": "20170225160518556415"
+        },
+        {
+            "payAmount": 51760,
+            "payTime": "2017-02-25 16:01:59",
+            "paymentName": "积分支付",
+            "refundAccount": "",
+            "refundAmount": 0,
+            "refundOrganization": "",
+            "refundTime": "",
+            "tradeId": "20170225160150289406"
+        },
+        {
+            "payAmount": 51760,
+            "payTime": "2017-02-25 15:59:56",
+            "paymentName": "积分支付",
+            "refundAccount": "",
+            "refundAmount": 0,
+            "refundOrganization": "",
+            "refundTime": "",
+            "tradeId": "20170225155935794941"
+        },
+        {
+            "payAmount": 1000000,
+            "payTime": "2017-02-25 15:59:56",
+            "paymentName": "余额支付",
+            "refundAccount": "",
+            "refundAmount": 0,
+            "refundOrganization": "",
+            "refundTime": "",
+            "tradeId": "20170225155935794941"
+        }
+    ],
+    "policyId": "",
+    "policySts": "10",
+    "productId": "1092",
+    "productName": "车险测试产品",
+    "productProp": 528,
+    "sex": "1",
+    "shippingAddress": "杭州西湖区1",
+    "startTime": "2017-02-27 09:55:38",
+    "sts": "10",
+    "sumAmount": "100000",
+    "sumPremium": "64700",
+    "tradeAmount": "1",
+    "tradeId": "20170227095438370139",
+    "tradePeriod": "1年_1_4",
+    "tradePremium": "64700",
+    "tradeTime": "2017-02-27 09:54:38",
+    "typeList": [
+        {
+            "insureList": [
+                {
+                    "amountUnit": "",
+                    "desc": "",
+                    "extraInsureList": [],
+                    "insureAmount": "600,000",
+                    "insureName": "交强险"
+                },
+                {
+                    "amountUnit": "",
+                    "desc": "",
+                    "extraInsureList": [],
+                    "insureAmount": "600,000",
+                    "insureName": "车船险"
+                }
+            ],
+            "sumInsureAmount": "0",
+            "typeId": 0,
+            "typeName": "强制保险"
+        },
+        {
+            "insureList": [
+                {
+                    "amountUnit": "",
+                    "desc": "",
+                    "extraInsureList": [],
+                    "insureAmount": "100,000",
+                    "insureName": "车辆保障"
+                },
+                {
+                    "amountUnit": "",
+                    "desc": "",
+                    "extraInsureList": [],
+                    "insureAmount": "600,000",
+                    "insureName": "乘客座位险"
+                },
+                {
+                    "amountUnit": "",
+                    "desc": "",
+                    "extraInsureList": [
+                        {
+                            "extraDesc": "",
+                            "extraInsureAmount": "600,000",
+                            "extraInsureName": "司机座位不计免赔"
+                        },
+                        {
+                            "extraDesc": "",
+                            "extraInsureAmount": "600,000",
+                            "extraInsureName": "车辆不计免赔"
+                        }
+                    ],
+                    "insureAmount": "",
+                    "insureName": "附加不计免赔"
+                }
+            ],
+            "sumInsureAmount": "0",
+            "typeId": 0,
+            "typeName": "商业保险"
+        }
+    ],
+    "userId": ""
+}

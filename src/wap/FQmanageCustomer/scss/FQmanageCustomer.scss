@@ -1,0 +1,110 @@
+@charset "utf-8";
+@import "../../../assets/scss/usage/layout/reset.scss";
+@import "../../../assets/scss/usage/layout/common.scss";
+@import "../../../assets/fonts/iconfont.css";
+$padding:0.36rem;
+.body{
+	padding-top:0.88rem;
+	&.isWeiXin{
+      padding-top: 0;
+	}
+}
+.user{
+	height: 2.08rem;
+	background: #fff;
+	padding:0 0.36rem;
+	.img{
+		img{
+			width:1.24rem;
+			height: 1.24rem;
+			@include border-radius(0.62rem);
+		}
+	}
+	p{
+		margin-left:0.28rem;
+		font-size:0.28rem;
+		color:#a8afac;
+		&.name{
+			font-size: 0.36rem;
+			color:#5a5e5c;
+		}
+	}
+	.next-icon{
+		color:#e3e3e3;
+		font-size: 0.2rem;
+	}
+}
+.list{
+	width:100%;
+	.list_head{
+		padding: 0.36rem $padding 0.26rem;
+		font-size:0.24rem;
+		line-height: 0.24rem;
+		color:#a8aeac;
+	}
+	.past{
+		color:#a8aeac;
+	}
+	.item{
+		padding-top:0.4rem;
+		background:#fff;
+		width:100%;
+		position: relative;
+		overflow: hidden;
+	}
+}
+.top{
+	padding: 0 $padding;	
+	margin-bottom:0.1rem;
+	width:100%;
+	.left{
+		img{
+			height:1rem;
+			border:none;
+		}
+	}
+	.numberCar{
+		font-size:0.36rem;
+		color:#484c4b;
+		font-weight: bold;
+		overflow: hidden;
+		line-height: 1rem;
+		margin-left:0.26rem;
+	}
+}
+.center{
+	font-size:0.24rem;
+	line-height: 0.36rem;
+	@include border(0 0 1px 0, #e3e3e3, solid);
+	padding-bottom:0.48rem;
+	color:#484c4b;
+	>div{
+		padding: 0 $padding;
+		.br{
+			margin:0 0.1rem;
+		}	
+	}
+}
+.past{
+	color:#a8aeac;
+}
+.bottom{
+	padding: 0 $padding;
+	width:100%;
+	height:0.97rem;
+	line-height: 0.97rem;	
+	>div{
+		font-size:0.24rem;
+		color:#a8aeac;
+		>span{
+			font-size:0.3rem;
+		    color:#ffac89;
+		}
+		.past{
+	        color:#a8aeac;
+	   }
+	}
+	.past{
+	   color:#a8aeac;
+	}
+}

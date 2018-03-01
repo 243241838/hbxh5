@@ -1,0 +1,45 @@
+@charset "utf-8";
+@import "../../../../assets/scss/usage/layout/reset.scss";
+@import "../../../../assets/scss/usage/layout/common.scss";
+#body{
+    padding:0.36rem 0;
+}
+.bordertop{
+    @include border(1px 0 0 0,#e3e3e3,solid);
+}
+.list{
+    padding-left:0.36rem;
+    background: #fff;
+    margin-bottom:0.62rem;
+}
+.item{
+    font-size:0.28rem;
+    height: 1.1rem;
+    padding-right: 0.36rem;
+    span{
+        display: inline-block;
+        width:2.26rem;
+        height: 100%;
+        line-height: 1.1rem;
+        color:#5a5e5c;
+    }
+    input{
+        border:0;
+        outline: 0;
+        height: 100%;
+        line-height: 0.4rem;
+    }
+}
+.btn-box{
+    padding:0 0.36rem;
+    button{
+        height: 0.88rem;
+        width:100%;
+        background: #2ece90;
+        color:#fff;
+        font-size:0.36rem;
+        border:0;
+        text-align: center;
+        @include border-radius(0.06rem);
+    }
+}

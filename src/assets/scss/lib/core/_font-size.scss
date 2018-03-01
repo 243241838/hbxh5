@@ -1,0 +1,39 @@
+$small:1px;
+$middle:2px;
+$big:3px;
+@mixin font-size($fontSize: 24px) {
+    /* 兼容iphone5 */
+    @media (device-height:568px) and (-webkit-min-device-pixel-ratio:2){
+        font-size: $fontSize - $small;
+    } 
+    @media only screen and (max-device-width :480px){ 
+        font-size: $fontSize - $small;
+    } 
+    @media only screen and (min-device-width :481px){ 
+        font-size: $fontSize - $small;
+    } 
+    /*6*/ 
+    @media (min-device-width : 375px) and (max-device-width : 667px) and (-webkit-min-device-pixel-ratio : 2){ 
+        font-size: $fontSize;
+    } 
+    /*6+*/ 
+    @media (min-device-width : 414px) and (max-device-width : 736px) and (-webkit-min-device-pixel-ratio : 3){
+        font-size:$fontSize + $middle;
+     } 
+    /*魅族*/ 
+    @media only screen and (min-device-width :1080px) and (-webkit-min-device-pixel-ratio : 2.5){ 
+        font-size:$fontSize + $middle;
+    } 
+    /*mate7*/ 
+    @media only screen and (min-device-width :1080px) and (-webkit-min-device-pixel-ratio : 3){
+        font-size:$fontSize + $middle;
+     } 
+    /*4 4s*/ 
+    @media only screen and (device-height :480px) and (-webkit-device-pixel-ratio:2){ 
+        font-size:$fontSize - $small;
+    } 
+    // ipad mm
+    @media only screen and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio : 3) {
+        font-size:$fontSize + $big;
+    }
+}

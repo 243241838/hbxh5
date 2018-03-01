@@ -1,0 +1,145 @@
+@charset "utf-8";
+@import "../../../../assets/scss/usage/layout/reset.scss";
+@import "../../../../assets/scss/usage/layout/common.scss";
+@import '../../../../assets/fonts/iconfont.css';
+$deepColor: #484c4a;
+$darkColor:#a8afac;
+$width17:0.34rem;
+$height56:1.12rem;
+.session{
+    width:100%;
+}
+#body{
+    padding-top:1.64rem;
+    background: #f5f5f5;
+    &.isWeiXin{
+        padding-top: 0.76rem;
+    }
+}
+.time{
+    height:0.76rem;
+    width:100%;
+    text-align: center;
+    line-height: 0.76rem;
+    color: #5a5e5c;
+    font-size: 0.28rem;
+    @include overflow(scroll);
+    background:#f5f5f5;
+    position:fixed;
+    left:0;
+    top:0.88rem;
+    &.isWeiXin{
+        top:0;
+    }
+    z-index: 99;
+    span{
+        color: #ff4238;
+    }
+    b{
+        font-weight: normal;
+    }
+}
+.flexbox{
+    @include flexbox();
+}
+.flex{
+    @include flex();
+}
+.icon_phone{
+    font-size:0.48rem;
+    color:#1ccf8d;
+}
+.list{
+    background: #fff;
+    .item{
+        background: #fff;
+        height:$height56;
+        line-height:$height56;
+        width:100%;
+        color: $deepColor;
+        font-size: 0.28rem;
+        padding:0 $width17;
+        &.bordertop{
+            @include border(1px 0 0 0,#ddd,solid);
+        }
+    }
+}
+
+.moneyFont{
+    font-size: 0.42rem;
+    color:#ff7d37;
+}
+.link{
+    display: block;
+    width:100%;
+    color:#484c4a;
+    .red{
+        font-size: 0.28rem;
+        color:#a8afac;
+    }
+}
+.head{
+    height: 0.8rem;
+    line-height: 0.8rem;
+    color:$darkColor;
+    padding-left:$width17;
+    font-size:0.28rem;
+}
+.payment{
+    background: $white;
+    height:1.1rem;
+    line-height: 1.1rem;
+    padding:0 $width17;
+    @include border(1px 0 0 0,#ddd,solid);
+    font-size:0.28rem;
+    &.noBorder{
+        @include border(0,#ddd,solid);
+    }
+    span{
+        color:#5a5e5c;
+    }
+}
+.noBorder{
+    border:none;
+}
+.guoxuan{
+    display: inline-block;
+    width:0.4rem;
+    height:0.4rem;
+    font-size:0.28rem;
+}
+.green{
+    color:#2dce8f;
+}
+.gray{
+    color: $darkColor;
+}
+
+.footer{
+    margin-top:0.8rem;
+    position:fixed;
+    bottom:0;
+    left:0;
+    height:1.4rem;
+    width:100%;
+    @include border(1px 0 0 0,#e3e3e3,solid);
+    padding:0.26rem $width17;
+    a{
+        display: block;
+        width:100%;
+        color:#fff;
+        background: #2dce8f;
+        text-align: center;
+        line-height: 0.88rem;
+        font-size:0.36rem;
+        @include border-radius(0.12rem);
+    }
+    .gray{
+       background: #a8afac; 
+    }
+}
+.icon
+.icon-xiayibu{
+    font-size: 0.24rem;
+    color: $darkColor;
+}

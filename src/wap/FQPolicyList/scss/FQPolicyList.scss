@@ -1,0 +1,117 @@
+@charset "utf-8";
+@import "../../../assets/scss/usage/layout/reset.scss";
+@import "../../../assets/scss/usage/layout/common.scss";
+@import "../../../assets/fonts/iconfont.css";
+$padding:0.36rem;
+.list{
+	padding-top:0.88rem;
+	&.isWeiXin{
+      padding-top: 0;
+	}
+	width:100%;
+	.list_head{
+		padding: 0.36rem $padding 0.26rem;
+		font-size:0.24rem;
+		line-height: 0.24rem;
+		color:#a8aeac;
+	}
+	.past{
+		color:#a8aeac;
+	}
+	.item{
+		padding-top:0.4rem;
+		background:#fff;
+		width:100%;
+		position: relative;
+		overflow: hidden;
+	}
+}
+.top{
+	padding: 0 $padding;	
+	margin-bottom:0.1rem;
+	width:100%;
+	height:1rem;
+	.left{
+		img{
+			height:1rem;
+			border:none;
+		}
+	}
+	.numberCar{
+		font-size:0.36rem;
+		color:#484c4b;
+		font-weight: bold;
+		overflow: hidden;
+		line-height: 1rem;
+		margin-left:0.26rem;
+	}
+	.past{
+		color:#a8aeac;
+	}
+	.right{
+		position: absolute;
+		right:$padding;
+		top:-0.10rem;
+		img{
+			width: 1.42rem;
+			height:1.42rem;
+			border:0;
+		}
+	.past{
+	   color:#a8aeac;
+	}
+	   .yblock{
+		   display:block;
+	   }
+	}
+}
+.center{
+	font-size:0.24rem;
+	// line-height: 0.36rem;
+	@include border(0 0 1px 0, #e3e3e3, solid);
+	padding-bottom:0.48rem;
+	color:#484c4b;
+	>div{
+		padding: 0 $padding;
+		.br{
+			margin:0 0.1rem;
+		}	
+	}
+}
+.past{
+	color:#a8aeac;
+}
+.bottom{
+	padding: 0 $padding;
+	width:100%;
+	height:0.97rem;
+	line-height: 0.97rem;	
+	>div{
+		font-size:0.24rem;
+		color:#a8aeac;
+		>span{
+			font-size:0.3rem;
+		    color:#ffac89;
+		}
+		.past{
+	        color:#a8aeac;
+	   }
+	}
+	.past{
+	   color:#a8aeac;
+	}
+}
+.footer{
+	width:100%;
+	padding:0.62rem $padding 0.3rem;
+	.btn{
+       width:100%;
+	   height:0.88rem;
+	   line-height: 0.88rem;
+	   text-align: center;
+	   background:#2ece90;
+	   @include border-radius(0.08rem);
+	   font-size:0.36rem;
+	   color:#fff;
+	}
+}

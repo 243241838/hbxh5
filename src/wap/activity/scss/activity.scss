@@ -1,0 +1,86 @@
+@charset "utf-8";
+@import "../../../assets/scss/usage/layout/reset.scss";
+@import "../../../assets/scss/usage/layout/common.scss";
+@import "../../../assets/fonts/iconfont.css";
+
+#body{
+    padding-bottom:0.35rem;
+}
+.banner{
+    width:100%;
+    .bannerImg{
+        width:100%;
+    }
+}
+.list{
+    padding:0.3rem 0.13rem 0;
+    width:100%;
+    .item{
+        float:left;
+        margin: 0.13rem;
+        width:3.36rem;
+        max-width: 3.36rem;
+        height:5.24rem;
+        background:#fff;
+        @include border-radius(6px);
+        img{
+            height:2.52rem;
+            display: block;
+            width:3.36rem;
+            border:0;
+            @include border-radius(6px 6px 0 0);
+        }
+        .content{
+            padding:0.37rem 0.22rem 0;
+            h3{
+                @include font-size(16px);
+                color:#5a5e5c;
+                font-weight: normal;
+            }
+            .text-item{
+                color:#a8afac;
+                @include font-size(12px);
+                line-height: 0.36rem;
+            }
+            .text-box{
+                color:#a8afac;
+                margin-top:0.14rem;
+                width:100%;
+                .moneyUnit{
+                    color:#2dce8f;
+                    font-size:12px;
+                }
+                .money{
+                    @include font-size(16px);
+                    color:#2dce8f;
+                }
+                .mount{
+                    @include font-size(12px);
+                    &.tuiguang{
+                        color:#ff7d37;
+                    }
+                }
+            }
+        }
+    }
+}
+.activity{
+    margin:0.49rem 0.26rem 0;
+    color:#656b6e;
+    background: #fff;
+    @include border-radius(6px);
+    h2{
+        @include font-size(14px);
+        font-weight: normal;
+        text-align: center;
+        padding:0.42rem 0 0.12rem;
+    }
+    p{
+        line-height: 0.46rem;
+        @include font-size(12px);
+        padding:0 0.24rem;
+        &.last{
+            padding-bottom:0.22rem;
+        }
+    }
+}

@@ -1,0 +1,195 @@
+@charset "utf-8";
+@import "../../common/common.scss";
+.g_homePolicy_body{
+    background: #f5f5f5;
+    position: relative;
+}
+.line_height{
+    width:100%;
+    margin-top: 0.88rem;
+    height:1px; 
+    background:rgba(227,227,227,1);
+    &.isWeiXin{
+		margin-top: 0rem;
+	}
+}
+.surrender_box{
+    
+    width:100%;
+    height:2.04rem; 
+    background:rgba(255,255,255,1);
+    display: flex;
+    .shy_flex{
+        flex: 1;
+        .shy_icon{
+            width:0.88rem;
+            height:0.88rem; 
+            margin-top: 0.36rem;
+            margin-left: 0.81rem;
+            border-radius: 50%;
+            border: none;
+            line-height: 0.88rem;
+            .iconfont{
+                font-size:0.88rem;
+                color: rgba(124,226,186,1);
+            }
+        }
+        .item{
+            width:0.95rem;
+            height:0.23rem; 
+            font-size:0.22rem;
+            margin-left:0.78rem;
+            margin-top: 0.22rem;
+            font-family:PingFang-SC-Medium;
+            color:rgba(72,76,75,1);
+            line-height:0.23rem;
+        }
+    }
+    .shy_flex1{
+        flex: 1;
+        .shy_icon{
+            width:0.88rem;
+            height:0.88rem; 
+            margin-top: 0.36rem;
+            margin-left: 0.81rem;
+            border-radius: 50%;
+            border: none;
+            line-height: 0.88rem;
+            .iconfont{
+                font-size:0.88rem;
+                color: rgba(255,200,106,1);
+            }
+        }
+        .item{
+            width:0.95rem;
+            height:0.23rem; 
+            font-size:0.22rem;
+            margin-left:0.78rem;
+            margin-top: 0.22rem;
+            font-family:PingFang-SC-Medium;
+            color:rgba(72,76,75,1);
+            line-height:0.23rem;
+        }
+    }
+    .shy_flex2{
+        flex: 1;
+        .shy_icon{
+            width:0.88rem;
+            height:0.88rem; 
+            margin-top: 0.36rem;
+            margin-left: 0.81rem;
+            border-radius: 50%;
+            border: none;
+            line-height: 0.88rem;
+            .iconfont{
+                font-size:0.88rem;
+                color: rgba(255,156,103,1);
+            }      
+        }
+        .item{
+            width:0.95rem;
+            height:0.23rem; 
+            font-size:0.22rem;
+            margin-left:0.78rem;
+            margin-top: 0.22rem;
+            font-family:PingFang-SC-Medium;
+            color:rgba(72,76,75,1);
+            line-height:0.23rem;
+        }
+    }
+	&.isWeiXin{
+		padding-top:0;
+	}
+}
+.shy_baodan{
+    margin-top: 0.26rem;
+    width: 100%;
+    height: 4.66rem;
+    padding-top:0.47rem;
+    background:rgba(255,255,255,1);
+    position: relative;
+        .shy_baodanName{
+            
+            margin-left: 0.34rem; 
+            height:0.34rem; 
+            font-size:0.36rem;
+            font-family:PingFang-SC-Bold;
+            color:rgba(72,76,75,1);
+            line-height:0.34rem;
+        }
+        .shy_logo{
+            margin-top:0.26rem;
+            margin-left: 0.36rem; 
+            width:1.12rem;
+            height:0.48rem; 
+            .logoPic{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .shy_message{
+            margin-top:0.33rem;
+            margin-left: 0.35rem;
+            width:4.46rem;
+            height:1.31rem; 
+            font-size:0.24rem;
+            font-family:PingFang-SC-Medium;
+            color:rgba(72,76,75,1);
+            line-height:0.36rem;
+        }
+    .line-height{
+        width:100%;
+        height:1px; 
+        margin-top:0.5rem;
+        background:rgba(227,227,227,1);
+    }
+    .shy_amount{
+        width: 100%;
+        height:0.96rem; 
+        font-size:0.24rem;
+        font-family:PingFang-SC-Medium;
+        color:rgba(168,174,172,1);
+        line-height:0.96rem;
+        padding-left: 0.35rem;
+    }
+    .baodan_status{
+        position: absolute;
+        right: 0.69rem;
+        top: 0.5rem;
+        width:0.93rem;
+        height:0.27rem; 
+        font-size:0.28rem;
+        font-family:PingFang-SC-Medium;
+        color:rgba(168,174,172,1);
+        line-height:0.27rem;
+    }
+    .baodan_apply{
+        position: absolute;
+        right: 0.36rem;
+        bottom: 0.24rem;
+        border: 1px solid rgba(46,206,144,1);
+        width:1.48rem;
+        height:0.48rem; 
+        color:rgba(46,206,144,1);
+        border-color:rgba(46,206,144,1);
+        font-size:0.28rem;
+        font-family:PingFang-SC-Medium;
+        border-radius: 4px ; 
+        line-height: 0.48rem;
+        text-align: center;
+    }
+}
+.shy_toast{
+    margin: auto;  
+    position: absolute;  
+    top: 0; 
+    left: 0; 
+    bottom: 0; 
+    right: 0;
+    width:6.58rem;
+    height:4.04rem; 
+    background:rgba(255,255,255,1);
+    border-radius: 8px ;   
+    border:1px solid red;
+}
+

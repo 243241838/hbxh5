@@ -1,0 +1,130 @@
+@charset "utf-8";
+@import "../../../assets/scss/usage/layout/reset.scss";
+@import "../../../assets/scss/usage/layout/common.scss";
+@import '../../../assets/fonts/iconfont.css';
+#body{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+.session{
+    width:100%;
+}
+.head{
+    height:1rem;
+    line-height: 1rem;
+    background: #2dce8f;
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(center);
+    .logo{
+        width:0.58rem;
+        height:0.6rem;
+        background:url(../images/logo.png) no-repeat center center;
+        background-size:100% 100%;
+        margin-right: 0.22rem;
+    }
+    .title{
+        color: #fff;
+        font-family: '宋体';
+        font-size:0.44rem;
+    }
+}
+.paymentImg{
+    margin-top:0.87rem;
+    margin-bottom:0.16rem;
+    height: 2.64rem;
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(center);
+    .img{
+        width:2.56rem;
+        height:2.64rem;
+        background:url(../images/success.png) no-repeat center center;
+        background-size: 100% 100%;
+    }
+}
+.successDes{
+    height:0.72rem;
+    text-align: center;
+    line-height: 0.72rem;
+    font-weight: 800;
+    color:#5a5e5c;
+    font-size:0.32rem;
+}
+.linePhone{
+    height:0.44rem;
+    text-align: center;
+    font-size:0.24rem;
+    line-height:0.44rem;
+    color:#a8afac;
+}
+.box{
+    padding: 0.52rem 0 0.88rem;
+    .content {
+        width:7.08rem;
+        height:4.10rem;
+        background: url(../images/paysuccessBg.png) no-repeat;
+        background-size: 100% 100%;
+        .tipContent{
+            color:#2dce8f;
+            line-height: 0.72rem;
+            font-size:0.26rem;
+            padding-left:1.34rem;
+        }
+        .list{
+            padding:0.35rem 0.34rem;
+            .item{
+                height: 0.72rem;
+                font-size:0.28rem;
+                line-height: 0.36rem;
+                color:#fff;
+                .left{
+                    display: inline-block;
+                    width:1.5rem;
+                    .blank{
+                        padding-left:0.57rem;
+                    }
+                }
+                .input{
+                    border:none;
+                    outline: none;
+                    transform: translateY(-0.2rem);
+                }
+                .btn{
+                    float:right;
+                    font-size: 0.24rem;
+                    height: 0.36rem;
+                    line-height: 0.36rem;
+                    width:0.88rem;
+                    text-align: center;
+                    background:#fff;
+                    color:#2dce8f;
+                    border: none;
+                    @include border-radius(0.06rem);
+                }
+                .money{
+                    color:#fff112;
+                    font-size:0.32rem;
+                }
+            }
+        }
+    }
+}
+.btnBox{
+    padding:0.28rem 0.34rem;
+    .bbb{
+        height: 0.90rem;
+        .button{
+            background: #fff;
+            display: block;
+            width:3.78rem;
+            height:0.88rem;
+            text-align: center;
+            color:#2dce8f;
+            line-height: 0.88rem;
+            font-size:0.36rem;
+            @include border(1px,#2dce8f,solid,0.09rem);
+        }
+    }
+}

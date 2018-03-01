@@ -1,0 +1,539 @@
+@charset "utf-8";
+@import "../../../assets/scss/usage/layout/reset.scss";
+@import "../../../assets/scss/usage/layout/common.scss";
+@import "../../../assets/fonts/iconfont.css";
+$padding:0.36rem;
+$tgray: #a8afac;
+.isshow{
+    padding-top:0.88rem;
+}
+section{
+    .list{
+        background:#fff;
+         background: #fff;
+        .head{
+            width: 100%;
+           padding:0.36rem 0 0.26rem 0;     
+            color:#a8afac;
+            // @include font-size(12px);
+            font-size:0.24rem;
+            padding-left:$padding;
+            background: #f5f5f5;
+        }
+        .itm{
+            padding-right:$padding;
+            overflow: hidden;
+            // line-height: 55px;
+            line-height: 1.20rem;
+            margin-left:$padding;
+            @include border(0 0 1px 0,#e3e3e3,solid);
+            // @include font-size(14px);
+            font-size:0.28rem;
+            color:#5a5e5c;
+            .tata{
+               overflow: hidden;
+               text-align: center; 
+               >span{
+                   span:nth-child(2){
+                       font-size:0.28rem;
+                   }
+               }
+               .tata_center{
+                    //  @include font-size(14px);
+                     font-size:0.26rem;
+                     color:#a8afac;
+                     display: block;
+                     width:1.7rem;
+                     margin:0 auto;
+                     .ico{
+                        //   @include font-size(16px);
+                          font-size:0.32rem;
+                          color:#2dce8f;
+                          float:left;
+                          
+                     }
+                     .disregard{
+                         float:center;
+                     }
+               }
+            }
+        }
+        .itm_border{
+            @include border(0,#e3e3e3,solid);
+        }
+        .ic1{
+            float: right;
+            display: block;
+            color:#e3e3e3;
+            //  @include font-size(8px);
+             font-size:0.16rem;
+             margin-left:0.13rem;
+        }
+    }
+}
+.isSelected{
+    display:block !important;
+}
+.noneMarginR{
+    margin-right: 0 !important;
+}
+footer{
+    width:100%;
+    // height:2.3rem;
+    height:1rem;
+    // padding: 0 0.34rem;
+    // padding-top:0.62rem;
+    div {
+        width:3.18rem;
+        height:0.89rem;
+        text-align:center;
+        line-height: 0.88rem;
+        // @include font-size(20px);
+        font-size:0.4rem;
+        color:#1ccf8d;
+        @include border(1px,#1ccf8d,solid,5px);
+        background: #fff;
+    }
+}
+.layer{
+    background:rgba(0,90,0,0.5);
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+}
+
+.choose-city{
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    .title{
+        text-align: center;
+        color: #000;
+        padding: 0.2rem 0;
+        .close{
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: inline-block;
+            width: 0.6rem;
+            height: 0.6rem;
+            line-height: 0.6rem;
+            color: $tgray;
+        }
+    }
+}
+.city-list{
+    @include border(0 0 1px 0,#e3e3e3,solid);
+}
+.city-item{
+    padding: 0.2em 0.2rem 0.16rem 0.2rem;
+    display: inline-block;
+    @include border(0 0 2px 0,#fff,solid);
+}
+.city-item.cur{
+    color: $green;
+    @include border(0 0 2px 0,$green,solid);
+}
+.cityDetail-list{
+    max-height: 2rem;
+    overflow-y:scroll;
+}
+.cityDetail-item{
+    padding: 0.1rem;
+    i{
+        color: $green;
+        margin-left: 0.1rem;
+        // @include font-size(12px);
+        font-size:0.24rem;
+    }
+}
+.cityDetail-item.cur{
+    color: $green;
+}
+.com_alert {
+    width:6.6rem;
+    height:5.57rem;
+    background:#fff;
+    position: fixed;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    margin:auto;
+    padding-top: 0.26rem;
+    @include border-radius(5px);
+    .fr_span{
+        margin-right:0.26rem;
+         .iconfont{
+            //  @include font-size(13px);
+             font-size:0.26rem;
+             color:#2dce8f;
+         }
+    }
+    .center {
+        padding:0.99rem 0 1.13rem 0;
+        >div{
+            text-align: center;
+        }
+        .xun{
+            // @include font-size(18px);
+            font-size:0.36rem;
+            line-height: 0.7rem;
+            color:#a8afac;
+        }
+        .money{
+            @include font-size(46px);
+            line-height: 1.09rem;
+            color:#ff7d37;
+        }
+        .money1{
+            // @include font-size(30px);
+            font-size:0.6rem;
+            line-height: 1.09rem;
+            color:#ff7d37;
+        }
+    }
+    .btn{
+        padding:0 0.36rem;
+        color:#fff;
+        >div{
+            width:2.77rem;
+            height:0.88rem;
+            line-height: 0.88rem;
+            text-align: center;
+            //  @include font-size(18px);
+             font-size:0.36rem;
+             @include border-radius(5px);
+        }
+        .fl{
+            background:#2dce8f;
+        }
+        .fr{
+            background:#ff7d37;
+        }
+    }
+}
+//底部滑窗样式
+.choose-city{
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size:0.26rem;
+    .title{
+        text-align: center;
+        color: #000;
+        padding: 0.1rem 0;
+        .close{
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: inline-block;
+            width: 0.6rem;
+            height: 0.6rem;
+            line-height: 0.6rem;
+            color: $tgray;
+        }
+    }
+}
+.city-list{
+    @include border(0 0 1px 0,#e3e3e3,solid);
+}
+.city-item{
+    padding: 0.1rem 0.2rem;
+    display: inline-block;
+    @include border(0 0 2px 0,#fff,solid);
+}
+.city-item.cur{
+    color: $green;
+    @include border(0 0 2px 0,$green,solid);
+}
+.cityDetail-list{
+    max-height: 2rem;
+    overflow-y:scroll;
+}
+.cityDetail-item{
+    padding: 0.15rem;
+    i{
+        color: $green;
+        margin-left: 0.1rem;
+        // font-size:0.30rem;
+    }
+}
+.cityDetail-item.cur{
+    color: $green;
+}@charset "utf-8";
+@import "../../../assets/scss/usage/layout/reset.scss";
+@import "../../../assets/scss/usage/layout/common.scss";
+@import "../../../assets/fonts/iconfont.css";
+$padding:0.36rem;
+$tgray: #a8afac;
+section{
+    .list{
+        background:#fff;
+         background: #fff;
+        .head{
+            width: 100%;
+           padding:0.36rem 0 0.26rem 0;     
+            color:#a8afac;
+            // @include font-size(12px);
+            font-size:0.24rem;
+            padding-left:$padding;
+            background: #f5f5f5;
+        }
+        .itm{
+            padding-right:$padding;
+            overflow: hidden;
+            // line-height: 55px;
+            line-height: 1.20rem;
+            margin-left:$padding;
+            @include border(0 0 1px 0,#e3e3e3,solid);
+            // @include font-size(14px);
+            font-size:0.28rem;
+            color:#5a5e5c;
+            .tata{
+               overflow: hidden;
+               text-align: center; 
+               >span{
+                   span:nth-child(2){
+                       font-size:0.28rem;
+                   }
+               }
+               .tata_center{
+                    //  @include font-size(14px);
+                     font-size:0.26rem;
+                     color:#a8afac;
+                     display: block;
+                     width:1.7rem;
+                     margin:0 auto;
+                     .ico{
+                        //   @include font-size(16px);
+                          font-size:0.32rem;
+                          color:#2dce8f;
+                          float:left;
+                          
+                     }
+                     .disregard{
+                         float:center;
+                     }
+               }
+            }
+        }
+        .itm_border{
+            @include border(0,#e3e3e3,solid);
+        }
+        .ic1{
+            float: right;
+            display: block;
+            color:#e3e3e3;
+            //  @include font-size(8px);
+             font-size:0.16rem;
+             margin-left:0.13rem;
+        }
+    }
+}
+.isSelected{
+    display:block !important;
+}
+.noneMarginR{
+    margin-right: 0 !important;
+}
+footer{
+    width:100%;
+    // height:2.3rem;
+    height:1rem;
+    // padding: 0 0.34rem;
+    // padding-top:0.62rem;
+    padding:0;
+    div {
+        width:3.18rem;
+        height:0.89rem;
+        text-align:center;
+        line-height: 0.88rem;
+        // @include font-size(20px);
+        font-size:0.4rem;
+        color:#1ccf8d;
+        @include border(1px,#1ccf8d,solid,5px);
+        background: #fff;
+    }
+}
+.layer{
+    background:rgba(0,90,0,0.5);
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+}
+
+.choose-city{
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    .title{
+        text-align: center;
+        color: #000;
+        padding: 0.2rem 0;
+        .close{
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: inline-block;
+            width: 0.6rem;
+            height: 0.6rem;
+            line-height: 0.6rem;
+            color: $tgray;
+        }
+    }
+}
+.city-list{
+    @include border(0 0 1px 0,#e3e3e3,solid);
+}
+.city-item{
+    padding: 0.2em 0.2rem 0.16rem 0.2rem;
+    display: inline-block;
+    @include border(0 0 2px 0,#fff,solid);
+}
+.city-item.cur{
+    color: $green;
+    @include border(0 0 2px 0,$green,solid);
+}
+.cityDetail-list{
+    max-height: 2rem;
+    overflow-y:scroll;
+}
+.cityDetail-item{
+    padding: 0.1rem;
+    i{
+        color: $green;
+        margin-left: 0.1rem;
+        // @include font-size(12px);
+        font-size:0.24rem;
+    }
+}
+.cityDetail-item.cur{
+    color: $green;
+}
+.com_alert {
+    width:6.6rem;
+    height:5.57rem;
+    background:#fff;
+    position: fixed;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    margin:auto;
+    padding-top: 0.26rem;
+    @include border-radius(5px);
+    .fr_span{
+        margin-right:0.26rem;
+         .iconfont{
+            //  @include font-size(13px);
+             font-size:0.26rem;
+             color:#2dce8f;
+         }
+    }
+    .center {
+        padding:0.99rem 0 1.13rem 0;
+        >div{
+            text-align: center;
+        }
+        .xun{
+            // @include font-size(18px);
+            font-size:0.36rem;
+            line-height: 0.7rem;
+            color:#a8afac;
+        }
+        .money{
+            @include font-size(46px);
+            line-height: 1.09rem;
+            color:#ff7d37;
+        }
+        .money1{
+            // @include font-size(30px);
+            font-size:0.6rem;
+            line-height: 1.09rem;
+            color:#ff7d37;
+        }
+    }
+    .btn{
+        padding:0 0.36rem;
+        color:#fff;
+        >div{
+            width:2.77rem;
+            height:0.88rem;
+            line-height: 0.88rem;
+            text-align: center;
+            //  @include font-size(18px);
+             font-size:0.36rem;
+             @include border-radius(5px);
+        }
+        .fl{
+            background:#2dce8f;
+        }
+        .fr{
+            background:#ff7d37;
+        }
+    }
+}
+//底部滑窗样式
+.choose-city{
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size:0.26rem;
+    .title{
+        text-align: center;
+        color: #000;
+        padding: 0.1rem 0;
+        .close{
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: inline-block;
+            width: 0.6rem;
+            height: 0.6rem;
+            line-height: 0.6rem;
+            color: $tgray;
+        }
+    }
+}
+.city-list{
+    @include border(0 0 1px 0,#e3e3e3,solid);
+}
+.city-item{
+    padding: 0.1rem 0.2rem;
+    display: inline-block;
+    @include border(0 0 2px 0,#fff,solid);
+}
+.city-item.cur{
+    color: $green;
+    @include border(0 0 2px 0,$green,solid);
+}
+.cityDetail-list{
+    max-height: 2rem;
+    overflow-y:scroll;
+}
+.cityDetail-item{
+    padding: 0.15rem;
+    i{
+        color: $green;
+        margin-left: 0.1rem;
+        // font-size:0.30rem;
+    }
+}
+.cityDetail-item.cur{
+    color: $green;
+}

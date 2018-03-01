@@ -1,0 +1,133 @@
+@charset "utf-8";
+@import "../../../assets/scss/usage/layout/reset.scss";
+@import "../../../assets/scss/usage/layout/common.scss";
+@import "../../../assets/fonts/iconfont.css";
+$padding:0.36rem;
+#body{
+    padding-top:0;
+    height:12.07rem;
+    &.isweixin{
+        padding-top:0.88rem;
+        height:12.95rem;
+    }
+}
+.head{
+    width:100%;
+    height:2.32rem;
+    background:url(../images/head.png) no-repeat center center;
+    background-size:cover;
+    position: relative;
+    .white{
+        width:1.8rem;
+        height:1.8rem;
+        background: #fff;
+        position: absolute;
+        top:1.42rem;
+        left:50%;
+        margin-left:-0.9rem;
+        @include border-radius(50%);
+        .logo{
+            width:1.7rem;
+            height:1.7rem;
+            background: url(../images/img.png) no-repeat center center;
+            background-size:cover;
+        }
+    }
+}
+.data{
+    width:100%;
+    height:2.41rem;
+    background: #fff;
+    padding:1.1rem $padding 0;
+    .name{
+        font-size:0.46rem;
+        color:#5a5e5c;
+        line-height: 0.7rem;
+        span{
+             overflow: hidden;
+             display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;	
+        }
+        .iconfont{
+            font-size:0.32rem;
+            margin-left:0.12rem;
+        }
+        .boy{
+            color:#4CA0FF;
+        }
+        .girl{
+            color:#ff9797;
+        }
+    }
+    .phone{
+        font-size:0.25rem;
+        color:#a8afac;
+        line-height: 0.50rem;
+        padding-bottom:0.42rem;
+    }
+}
+.list{
+    padding-left:0.36rem;
+    background: #fff;
+    margin-bottom:0.62rem;
+    .item{
+        height: 1.09rem;
+        @include border(0 0 1px 0, #e3e3e3, solid);
+        font-size:0.28rem;
+        &.first{
+            height: 0.8rem;
+        }
+        &.last{
+            @include border(0, #e3e3e3, solid);
+        }
+        &.three{
+            margin-bottom:10px;
+        }
+        .left{
+            width:2.13rem;
+            color:#a8afac;
+        }
+        .right{
+            color: #5a5e5c;
+            input{
+                border:0;
+                outline: none;
+                width:90%;
+                line-height:0.32rem;
+                display: block;
+            }
+            .location{
+                color:#a8afac;
+            }
+            .location1{
+                 color: #5a5e5c;
+            }
+            textarea{
+				margin-top:0.3rem;
+				border:0;
+				width:90%;
+                height:70%;
+                resize : none;
+			}
+        }
+        .icon{
+            padding-right: $padding;
+            font-size:0.2rem;
+            color:#e3e3e3;
+        }
+    }
+}
+.btn{
+    padding:0 0.36rem;
+    >div{
+        width:100%;
+        line-height: 0.88rem;
+        background: #2ece90;
+        text-align: center;
+        @include border-radius(0.1rem);
+        font-size:0.36rem;
+        color:#fff;
+    }
+}

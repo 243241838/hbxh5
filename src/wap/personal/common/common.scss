@@ -1,0 +1,107 @@
+@charset "utf-8";
+@import "../../../assets/scss/usage/layout/reset.scss";
+@import "../../../assets/scss/usage/layout/common.scss";
+@import "../../../assets/fonts/iconfont.css";
+$padding:0.36rem;
+.box{
+    padding-top:0.36rem;
+}
+.router-link{
+    color:#e3e3e3;
+}
+// personal公共样式统一写在这
+.child-view {
+    position: absolute;
+    width:100%;
+    transition: all .5s ease;
+    overflow-x: hidden;
+}
+.slide-left-enter, .slide-right-leave-active {
+    transition: all .5s ease;
+    transform: translate(100%, 0);
+}
+.slide-left-leave-active, .slide-right-enter {
+    transition: all .5s ease;
+    transform: translate(-100%, 0);
+}
+.button{
+    height:0.88rem;
+    line-height: 0.88rem;
+    background: #2ece90;
+    color: #fff;
+    font-size:0.36rem;
+    text-align: center;
+    @include border-radius(0.1rem);
+    margin:0 0.36rem;
+}
+.g_setPayPass_head{
+    padding-left:$padding;
+    height:1.18rem;
+    color:#a8aeac;
+    font-size:0.24rem;
+    .iconfont{
+        color:#2ece90;
+        margin-right:0.22rem;
+        font-size:0.22rem;
+    }
+}
+// 头部
+.g_home_head{
+    padding-left:$padding;
+    height:0.84rem;
+    color:#a8aeac;
+    font-size:0.24rem;
+    .iconfont{
+        color:#2ece90;
+        margin-right:0.22rem;
+    }
+    i{
+        font-size:0.24rem;
+    }
+}
+// 统一输入框
+.green-span{
+    color: #2ece90;
+    font-size:0.28rem;
+}
+.cell-list{
+    width:100%;
+    background:#fff;
+    padding-left:0.36rem;
+    .cell{
+        @extend .flexbox;
+        @extend .align-items;
+        background:#fff;
+        height:1.12rem;
+        padding-right: 0.36rem;
+        &.bordertop{
+            @include border(1px 0 0 0,#e3e3e3,solid);
+        }
+        .left_span{ 
+            font-size:0.28rem;
+            color:#484c4b;
+            width:2.24rem;
+        }
+        .right_span{   // 左边span 眼睛 文字设置
+            color:#c4cac6;
+            font-size:0.28rem;
+        }
+        .right_jiantou{   // 箭头
+            .iconfont{
+                color:#e3e3e3;  
+                font-size:0.24rem;
+            }
+        }
+        .cell-input{
+            @extend .flex;
+            line-height: 0.36rem;
+            font-size:0.28rem;
+            border: 0;
+            outline: none;
+            color:#484c4b;
+        }
+    }
+    .cell-noborder{
+        @include border(0,#e3e3e3,solid);
+    }
+}

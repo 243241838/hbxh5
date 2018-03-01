@@ -1,0 +1,53 @@
+@charset "utf-8";
+@import "../../common/common.scss";
+.g-verifyP_body{
+    padding-top:0.36rem; 
+}
+.g_verifyP_list{
+    padding-left:$padding;
+    background:#fff;
+    margin-bottom:0.62rem;
+    .item{
+        padding-right:$padding;
+        width:100%;
+        height:1.12rem;
+        @include border(0 0 1px 0, #e3e3e3, solid);
+        .flex{
+            height:100%;
+        }
+        >div{
+            font-size:0.28rem;
+            color:#484c4b;
+        }
+        input{
+            border:0;
+            height:100%;
+            font-size:0.28rem;
+            line-height: 0.4rem;
+            color:#484c4b;
+            width:80%;
+        }
+        .green{
+            color:#2ece90;
+        }
+        .iconfont{
+             color:#a8aeac;
+             font-size:0.28rem;
+        }
+    }
+    .noborder{
+        @include border(0, #e3e3e3, solid);
+    }
+}
+.g_verifyP_footer{
+    padding:0 $padding;
+    height:0.9rem;
+    line-height: 0.9rem;
+    text-align: center;
+    font-size: 0.36rem;
+    color:#fff;
+    .btn{
+        background:#2ece90;
+        @include border-radius(0.08rem);
+    }
+}

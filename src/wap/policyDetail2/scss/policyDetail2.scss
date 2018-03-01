@@ -1,0 +1,149 @@
+@charset "utf-8";
+@import "../../../assets/scss/usage/layout/reset.scss";
+@import "../../../assets/scss/usage/layout/common.scss";
+@import "../../../assets/fonts/iconfont.css";
+$number:#a8aeac;
+$padding:0.34rem;
+$ul:#fff;
+#body{
+	padding-top:0.88rem;
+	&.isWeiXin{
+		padding-top:0;
+	}
+}
+.top_head{
+	overflow: hidden;
+	width:100%;
+	height:2.44rem;
+	padding-top:0.36rem;
+	background:$ul;
+	padding-left:$padding;
+	padding-right:$padding;
+	position: relative;
+	margin-top:0.24rem;
+	.china_pingan{
+		width: 1.48rem;
+		height:0.6rem;
+		margin-bottom:0.12rem;
+		img{
+			width: 1.48rem;
+		    height: 0.6rem;
+		}
+	}
+	.fl{
+		.p1{
+			color:#484c4b;
+			font-size:0.36rem;
+			line-height:0.66rem;
+		}
+		.p2{
+			color: $number;
+			font-size:0.28rem;
+		}
+	}
+	.fr{
+		position: absolute;
+		right:$padding;
+		top:0.32rem;
+		img{
+			width:1.25rem;
+			height:1.25rem;
+		}
+	}
+}
+//保险责任
+.head{
+	padding-top:0.36rem;
+	padding-bottom:0.26rem;
+	color:#B3B9B6;
+	display:block;
+	background:#f5f5f5;
+	padding-left:$padding;
+	font-size:0.24rem;
+
+}
+.list{
+	background: $ul;
+	.itm{
+		margin-left:$padding;
+		padding-right:$padding;
+		height:0.96rem;
+		background: $ul;
+		@include border(0 0 1px 0,#e7e7e7,solid);
+		line-height:0.96rem;
+		font-size:0.28rem;
+		overflow: hidden;
+		color:#484C4B;
+		.ic1{
+			font-size:0.18rem;
+			color:#e3e3e3;
+			display:inline-block;
+		}
+	}
+	.data{
+		width:100%;
+		height:0.42rem;
+		background: #fff;
+	}
+	//附加
+	.fj_danger{
+		width:100%;
+		height:auto;
+		overflow: hidden;
+		padding: 0 $padding;
+		background: #fff;
+		.itm1{
+			padding:0 0.52rem;
+			width:100%;
+			height:0.73rem;
+			line-height: 0.73rem;
+			color:#a8afac;
+			font-size:0.28rem;
+			background:#f5f5f5;
+		}
+	}
+	.itm_border{
+	   @include border(0 0 0 0,#e7e7e7,solid);
+	}
+	.pa{
+		margin-bottom:0.31rem;
+	}
+	.itm_finally{
+		height:0.31rem;
+		background:#f5f5f5;
+	}
+}
+.disp{
+	display:none;
+}
+// 查看
+.look{
+	padding: 0 $padding;
+	font-size:0.24rem;
+	.p1{
+		padding-top:0.44rem;
+		padding-bottom:0.26rem;
+		.a{
+			color:#2ece90;
+		}
+	}
+	.p2{
+		font-size:0.24rem;
+		margin-bottom:0.46rem;
+		span{
+			color:#a8aeac;
+		}
+		.ico{
+			color:#2ece90;
+			font-size:0.24rem;
+		    margin-right:0.24rem;
+		}
+	}
+}
+#body{
+    //  padding-bottom:1.2rem;
+    @include overflow(scroll);
+}
+.dropload-down{
+	display: none;
+}

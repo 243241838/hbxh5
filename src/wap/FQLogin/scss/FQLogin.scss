@@ -1,0 +1,177 @@
+@charset "utf-8";
+@import "../../../assets/scss/usage/layout/reset.scss";
+@import "../../../assets/scss/usage/layout/common.scss";
+@import "../../../assets/fonts/iconfont.css";
+html{
+    background:#fff;
+}
+.container{
+    padding:0 0.36rem;
+}
+.logo{
+    width:100%;
+    text-align: center;
+    padding: 0.44rem 0 0.66rem 0;
+    img{
+        width:1.57rem;
+        height:2.44rem;
+    }
+}
+.form{
+    width:99%;
+    @include border(1px,#e3e3e3,solid,0.14rem);
+    .item{
+        position: relative;
+        width:100%;
+        height:1.15rem;
+        line-height: 1.15rem;
+        overflow: hidden;
+        .blue{
+            color:#2ece90;
+        }
+    }
+    input{ 
+        position:absolute;
+        left:0;
+        top:0.2rem;
+        outline: none;
+        border:0;
+        width:100%;
+        line-height: 0.36rem;
+        height:0.72rem;
+        font-size: 0.28rem;
+        padding-left: 0.79rem;
+    }
+    .place{
+        font-size:0.24rem;
+        position:absolute;
+        left:2.35rem;
+        color:#aaaaaa;
+        z-index: -1;
+    }
+    .pass{
+       width:70%;
+    }
+    .pass_word{
+        @include border(1px 0 0 0,#e3e3e3,solid);
+        input{
+             width:82%;
+        }
+        .fr{
+            font-size:0.28rem;
+        }
+    }
+    .ico{
+        font-size:0.48rem;
+        margin-left:0.28rem;
+        color:#c4cac6;
+    }
+    .ico1{
+        font-size:0.36rem;
+        margin-left:0.35rem;
+        color:#c4cac6;
+    }
+    .fr{
+        color:#c4cac6;
+        margin-right:0.26rem;
+        display:block;
+    }
+}
+.isWeiXin{
+    width:100%;
+    height:0.62rem;
+}
+.read{
+    width:100%;
+    height:1.1rem;
+    line-height: 1.1rem;
+    margin-bottom:0.2rem;
+    .read_icon{
+        position:relative;
+        top:-0.02rem;
+        .icon1{
+            width:0.36rem;
+            margin-right:0.08rem;
+        }
+    }
+    .read_a{
+        font-size:0.22rem;
+        color:#747474;
+        a{
+            // margin-left:7px;
+            color:#2ece90;
+        }
+    }
+    .fr{
+        color:#a8aeac;
+        font-size:0.24rem;
+        .forgetP{
+            color:#a8aeac;
+        }
+    }
+        
+}
+.btn{
+    width:100%;
+    font-size:0.9rem;
+    background:#e3e3e3;
+    @include border-radius(0.1rem);
+    font-size:0.36rem;
+    line-height: 0.9rem;
+    text-align: center;
+    color:#ffffff;
+}
+.green{
+    background:#3dd297;
+}
+.bottom{
+    width:100%;
+    text-align: center;
+    color:#a8aeac;
+    line-height: 0.9rem;
+    margin-bottom:0.38rem;
+    a{
+        color:#a8aeac;
+        font-size:0.28rem;
+    }
+    .string{
+        margin:0 0.3rem;
+        height:0.12rem;
+        @include border(0 1px 0 0,#999,solid);
+    }
+}
+.else{
+    width:100%;
+    height:0.24rem;
+    line-height: 0.24rem;
+    margin-bottom:0.42rem;
+    @include flexbox();
+    .line{
+        @include flex();
+        @include flexbox();
+        @include align-items(center);
+        @include justify-content(center);
+        > div{
+            background:#a8aeac;
+            @include border(1px 0 0 0);
+            width:100%;
+        }
+    }
+    .else_div{
+        font-size: 0.24rem;
+        color:#a8aeac;
+        padding:0 0.25rem;
+    }
+}
+.WeChat{
+    width:0.92rem;
+    height:0.92rem;
+    @include border(1px,#e3e3e3,solid,50%);
+    text-align: center;
+    margin:0 auto;
+    .icon1{
+        font-size:0.52rem;
+        color:#2dce8f;
+        line-height: 0.82rem;
+    }
+}

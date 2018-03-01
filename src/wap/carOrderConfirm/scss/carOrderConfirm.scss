@@ -1,0 +1,303 @@
+@charset 'utf-8';
+@import '../../../assets/scss/usage/layout/reset.scss';
+@import '../../../assets/scss/usage/layout/common.scss';
+@import '../../../assets/fonts/iconfont.css';
+$green: #2dce8f;
+$tgray: #a8afac;
+$background: #f5f5f5;
+$fz12: 0.24rem;
+$fz14: 0.28rem;
+$fz16: 0.32rem;
+html
+{
+    color: #484c4a;
+    background-color: $background;
+}
+#body
+{
+    width: 100%;
+    height: 100%;
+
+    @include overflow(scroll);
+    padding-top:0.88rem;
+    &.isWeiXin{
+        padding-top:0;
+    }
+}
+img
+{
+    width: 100%;
+}
+.iconfont
+{
+    font-family: 'iconfont' !important;
+    font-style: normal;
+
+    font-size:$fz16;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.green
+{
+    color: $green;
+}
+.initialize
+{
+    vertical-align: middle;
+
+    border: 0 none;
+    background: none;
+}
+.info-list
+{
+    margin-top: 0.2rem;
+    @include border(1px 0 0 0,#e3e3e3,solid);
+    background-color: #fff;
+    .confirm-address
+    {
+        background: url(../images/address_bg.png) no-repeat top left;
+        background-size: 100% 0.1rem;
+    }
+}
+.info-item
+{
+    padding: 5px 18px 0;
+    .add-location{
+        input
+            {
+                line-height: 1.12rem;
+                border: 0 none;
+            }
+        .right{
+            .iconfont{
+                font-size:0.24rem;
+                color:#e4e4e4;
+            }
+        }    
+    }
+}
+.info-item:last-child
+{
+    @include border(0,#e3e3e3,solid);
+}
+.item-title
+{
+    line-height: 0.4rem;
+
+    position: relative;
+
+    padding: 0.3rem 0.3rem;
+
+    color: #a8afac;
+}
+.car-confirm
+{
+    padding: 0.1rem 0.3rem;
+
+    background-color: #fff;
+    position: relative;
+    .adjust a{
+        right:0.3rem;
+        top:0.26rem;
+        font-size:0.26rem;
+        line-height: 0.48rem;
+        @include border(1px,#3ed489,solid,0.06rem);
+        color:#3ed489;
+        padding: 0 0.2rem;
+        position:absolute;
+    }
+}
+
+.confirm-item
+{
+    padding: 0.1rem 0;
+    overflow: hidden;
+    .title
+    {
+        width:1.60rem;
+        display: inline-block;
+        float:left;
+    }
+    .title.gray
+    {
+        color: $tgray;
+    }
+    .productName{
+         max-width:40%;
+         float:left;
+         display: inline-block;
+         @include ellipsis(40%,1);
+         width:auto;
+    }
+}
+.confirm-item1
+{
+    display: block;
+    .table
+    {
+        width: 99%;
+        margin-top: 0.1rem;
+        @include border(1px,#e3e3e3,solid,0.1rem);
+    }
+    .table-item
+    {
+        @include flexbox;
+        @include border(0 0 1px 0,#e3e3e3,solid);
+        &.last{
+            @include border(0,#e3e3e3,solid);
+        }
+        .item2
+        {
+            line-height: 0.88rem;
+            text-align: center;
+
+            color: $tgray;
+            @include border(0 1px 0 0,#e3e3e3,solid);
+            @include flex(1,row);
+            @include flex-flow(row);
+            &.last{
+                @include border(0,#e3e3e3,solid);
+            }
+            &.first{
+                 @include flex(1.1,row);
+            }
+        }
+        .item4
+        {
+            @extend .item2;
+        }
+        .item-name{
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            word-break: break-all;
+        }
+    }
+}
+.info-tips
+{
+    position: relative;
+
+    margin: 0.2rem 0.2rem 0.2rem 0.8rem;
+    padding-bottom: 1.6rem;
+    .info-check
+    {
+        position: absolute;
+        top: -0.04rem;
+        left: -0.5rem;
+
+        width: 0.4rem;
+    }
+    a{
+        color:#484C4A;
+    }
+}
+.confirm-footer
+{
+    line-height: 1.2rem;
+
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 1.2rem;
+    @include border(1px 0 0 0,#e3e3e3,solid);
+    background-color: #fff;
+
+    @include flexbox;
+    position: fixed;
+    .price
+    {
+        padding-left: 0.3rem;
+
+        color: #a8afac;
+
+        @include flex(3,row);
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        word-break: break-all;
+    }
+    .btn
+    {
+        text-align: center;
+
+        color: #fff;
+        background-color: $green;
+
+        @include flex(2,row);
+        font-size:0.36rem;
+    }
+    .orange
+    {
+        color: #f60;
+        font-size:0.42rem;
+        overflow: hidden;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        word-break: break-all;
+    }
+}
+.confirm-address-detail
+{
+    padding: 0 0.4rem;
+    .address1{
+        font-size:0.28rem;
+        color:#5a5a5a;
+        line-height:0.77rem;
+        width:100%;
+        height:0.77rem;
+        padding:0 0.48rem 0 0.63rem;
+        &.succeed{
+            color:#A6AFAC;
+        }
+    }
+    .address2
+    {
+        font-size:0.28rem;
+        color:#676968;
+        &.succeed{
+            color:#A6AFAC;
+        }
+        width:100%;
+        height:0.84rem;
+        padding-bottom:0.33rem;
+        .left{
+            width:0.63rem;
+            .iconfont{
+                 font-size:0.5rem;
+                 color:#909291;
+                 &.succeed{
+                    color:#A6AFAC;
+                }
+            }
+        }
+        .center{
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+        }
+        .icon{
+            width:0.67rem;
+            height:100%;
+            text-align: right;
+            position: relative;
+            .iconfont{
+                position: absolute;
+                top:0;
+                 font-size:0.24rem;
+                 color:#e4e4e4;
+                 &.succeed{
+                    color:#A6AFAC;
+                }
+            }
+        }
+    }
+}

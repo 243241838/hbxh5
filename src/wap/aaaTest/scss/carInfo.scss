@@ -1,0 +1,112 @@
+@charset 'utf-8';
+@import '../../../assets/scss/usage/layout/reset.scss';
+@import '../../../assets/scss/usage/layout/common.scss';
+@import '../../../assets/fonts/iconfont.css';
+$green: #2dce8f;
+$tgray: #a8afac;
+$background: #f5f5f5;
+$itemMt: 12px;
+$itemPb: 18px;
+$bradius: 5px;
+$fz12: 12px;
+$fz14: 14px;
+$fz16: 16px;
+$border: 1px solid #e3e3e3;
+html
+{
+    background-color: #f5f5f5;
+}
+img{
+    width: 100%;
+}
+.iconfont
+{
+    font-family: 'iconfont' !important;
+    font-style: normal;
+
+    @include font-size($fz16);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.green{
+    color: $green;
+}
+.initialize
+{
+    vertical-align: middle;
+
+    border: 0 none;
+    background: none;
+}
+.car-info{
+    padding-left: 15px;
+    background-color: #fff;
+}
+.car-item{
+    border-bottom: $border;
+    padding: 15px 15px 15px 0;
+    color: $tgray;
+    line-height: 30px;
+    height: 60px;
+    .title{
+        float: left;
+        width: 25%;
+        height: 30px;
+    }
+    .content{
+        float: left;
+        color:#484c4a;
+        height: 30px;
+        i{
+            @extend .initialize;
+            color: $tgray;
+        }
+    }
+    .content-select{
+        position: relative;
+        padding-right: 22px;
+        display: inline-block;
+        height: 30px;
+        select{
+            border: 0 none;
+        }
+    }
+    .content-select::after{
+        position: absolute;
+        right: 0;
+        top: 0;
+        @extend .iconfont;
+        content: '\e612';
+        color: #e3e3e3;
+        @include font-size(14px);
+    }
+    .content-input{
+        border: 0 none;
+        padding-left: 5px;
+    }
+    .choose{
+        color: $green;
+    }
+}
+.car-item:last-child{
+    border-bottom: 0 none;
+}
+.ui-btn-group{
+    overflow: hidden;
+    padding: 10px 15px;
+}
+.ui-btn{
+    @include font-size(16px);
+    line-height: 40px;
+    display: block;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    color: #fff;
+    background-color: $green;
+}

@@ -1,0 +1,118 @@
+@charset "utf-8";
+@import "../../common/common.scss";
+.order_box{
+    padding-top:0.88rem;
+	&.isWeiXin{
+		padding-top:0;
+	}
+}
+.order_head{
+	width:100%;
+	height:1rem;
+	font-size:0.28rem;
+	@include border(0 0 1px 0, #e3e3e3, solid);
+	background:#fafafa;
+	position: fixed;
+	left:0;
+	top:0.88rem;
+	z-index: 9;
+	&.isWeiXin{
+		top:0;
+	}
+	.item{
+		height:1rem;
+		line-height: 1rem;
+		padding: 0 0.28rem;
+	}
+	.border{
+		@include border(0 0 0.08rem 0, #2dce8f, solid);
+	}
+}
+.order_list{
+	width:100%;
+	padding-bottom:0.46rem;
+	padding-top:1rem;
+	background: #f5f5f5;
+	.list_head{
+		padding: 0 $padding;
+		height:0.8rem;
+		line-height: 0.8rem;
+		font-size:0.24rem;
+		color:#a8aeac;
+	}
+	.item{
+		padding-top:0.4rem;
+		background:#fff;
+		width:100%;
+		// overflow: hidden;
+	}
+}
+.order_top{
+	padding: 0 $padding;	
+	margin-bottom:0.3rem;
+	width:100%;
+	.left{
+		.numberCar{
+			font-size: 0.36rem;
+			color:#484c4b;
+			font-weight: bold;
+			width:4.53rem;
+			max-height:1.03rem;
+			line-height: 0.48rem;
+			margin-bottom:0.2rem;
+			overflow: hidden;
+		}
+		img{
+			// width:1.17rem;
+			height:0.5rem;
+		}
+	}
+	.right{
+		> div{
+			margin-top:-0.03rem;
+			width:1.49rem;
+			height:0.5rem;
+			line-height:0.5rem;
+			text-align: center;
+			@include border(0.04rem, #2ece90, solid ,0.08rem);
+			font-size:0.28rem;
+			color:#2ece90;
+		}
+		.noborder{
+				@include border(0px, #2ece90, solid);
+				color:#a8aeac;
+				&.color{
+					color:#2ece90;
+				}
+		}
+	}
+}
+.order_center{
+	font-size:0.24rem;
+	@include border(0 0 1px 0, #e3e3e3, solid);
+	padding-bottom:0.36rem;
+	color:#484c4b;
+	>div{
+		padding: 0 $padding;
+		.br{
+			margin:0 0.1rem;
+		}	
+	}
+}
+.order_bottom{
+	padding: 0 $padding;
+	width:100%;
+	height:0.97rem;
+	line-height: 0.97rem;	
+	> div {
+		font-size:0.24rem;
+		color:#a8aeac;
+		> span {
+			font-size:0.3rem;
+		    color:#ffac89;
+		}
+	}
+}
+.dropload-down{
+	background:#f5f5f5;
+}

@@ -1,0 +1,85 @@
+@charset "utf-8";
+@import "../../common/common.scss";
+.person_data_body{
+    padding-top:0.24rem;
+}
+.person_data_list{
+    background:#fff;
+    padding-left:$padding;
+    .person_data_item{
+        width:100%;
+        height:1.14rem;
+        @include border(0 0 1px 0, #e3e3e3, solid);
+        .left{
+            width:1.59rem;
+            font-size:0.28rem;
+            color:#484c4b;
+        }
+        .right{
+            font-size:0.26rem;
+            color:#5a5e5c;
+            position:relative;
+            height:100%;
+            input{
+                font-size:0.26rem;
+                line-height: 0.4rem;
+                height:100%;
+                width:90%;
+                outline-style: none;
+                border: none;
+            }
+            .img{
+               width:0.88rem;
+               height:0.88rem;
+               border-radius:50%;
+		       background-size: cover;
+           }
+            .icon{ // 没选中icon
+                font-size:0.26rem;
+                color:#cdd2cf;
+            }
+
+            .icon_select{  // 选中icon
+                font-size:0.26rem;
+                color:#ff7d37;
+            }
+            .orange{ // 选中颜色
+                color:#ff7d37;
+            }
+            .gender{
+                margin-right:0.86rem;
+            }
+            span{
+                span{
+                    margin-left:0.2rem;
+                }
+            }
+        }
+        .right_icon{
+            .iconfont{
+                 font-size:0.24rem;
+                 color:#e3e3e3;
+                 margin-right:$padding;
+            }
+        }
+    }
+    .first{
+        width:100%;
+        height:1.72rem;
+    }
+    .last{
+        @include border(0, #e3e3e3, solid);
+        margin-bottom:0.6rem;
+    }
+}
+.person_data_btn{
+    width:6.78rem;
+    height:0.9rem;
+    margin:0 auto;
+    text-align: center;
+    line-height: 0.9rem;
+    color:#fff;
+    font-size:0.36rem;
+    background:#2ece90;
+    @include border-radius(0.12rem);
+}

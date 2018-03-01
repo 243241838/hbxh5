@@ -1,0 +1,194 @@
+@charset "utf-8";
+@import "../../../assets/scss/usage/layout/reset.scss";
+@import "../../../assets/scss/usage/layout/common.scss";
+@import '../../../assets/fonts/iconfont.css';
+$isOn:#ff7d37;
+
+$font14: 0.28rem;
+$height84: .84rem;
+$itemTitleW: 2.2rem;
+$itemTitleC:#a8afac;
+$itemContentC: #484c4a;
+$itemLH: 0.5rem;
+$font21: 0.42rem;
+.isOn{
+    color:$isOn !important;
+}
+.ui-borderBottom{
+    @include border(0 0 1px 0,#e3e3e3,solid);
+}
+.ui-wh{
+    width:100%;
+    height:100%;
+    display: block;
+    .iconfont{
+        line-height:1rem;
+    }
+}
+.session{
+    .head {
+        padding-left:0.34rem;
+        height: $height84;
+        line-height: $height84;
+        font-size:0.28rem;
+        color:$itemTitleC; 
+    }
+    .list {
+        padding:0.18rem 0.34rem;
+        background-color:$white;
+        .item{
+            @include wrap();
+            line-height:$itemLH;
+            @include flexbox();
+            .item_title {
+                display: inline-block;
+                width:$itemTitleW;
+                color:$itemTitleC;
+                font-size:0.28rem;
+            }
+            .item_content{
+                @include flex();
+                color:$itemContentC;
+                font-size:0.28rem;
+            }
+        }
+    }
+    
+    .chengren_icon{
+        display:inline-block;
+        width:0.42rem;
+        height:0.47rem;
+        margin-bottom:-0.08rem;
+        background:url(../images/yiwai_icon.png) no-repeat center center;
+    }
+    .chengren_title{
+        font-weight: normal;
+        font-size:0.42rem;
+        margin-left:0.24rem;
+        line-height: 0.94rem !important;
+    }
+    .title{
+        color:#484c4a;
+        line-height: 0.9rem;
+        padding-left:0.34rem;
+        background: $white;
+        font-size:0.24rem;
+    }
+}
+.table-box{
+    padding: 0 0.34rem;
+    color: #a8afac;
+    background: $white;
+    padding-bottom: 0.24rem;
+    font-size:0.28rem;
+    .table{
+        @include border(1px,#e3e3e3,solid,0.12rem);
+        padding-bottom: 0.01rem;
+        &::after{
+            // height: 10.92rem;
+        }
+    }
+}
+.ui-row{
+    position: relative;
+    @include flexbox();
+    height:0.78rem;
+    text-align: center;
+    line-height: 0.78rem;
+    overflow: hidden;
+    @include border(1px 0 0 0,#e3e3e3,solid);
+    &.addone{
+        height: 0.79rem;
+    }
+}
+.ui-borderNone{
+    @include border(0,#e3e3e3,solid);
+}
+.ui-col{
+    @include flex();
+     &.flex7{
+        @include flex(7);
+    }
+    &.flex3{
+        @include flex(3);
+        @include border(0 0 0 1px,#e3e3e3,solid);
+    }
+}
+
+.title-color{
+    color:#484c4a;
+}
+.description{
+    height:1.84rem;
+    padding:0.26rem 0 0 0.34rem;
+    line-height:0.44rem;
+    @include flexbox();
+    > div{
+        @include flex();
+        padding-right:0.34rem;
+        > p{
+            @include wrap();
+            font-size:0.24rem;
+            color: #a8afac;
+        }
+    }
+}
+.payMoney{
+    display: none;
+    margin-top:0.26rem;
+    background: #fff;
+    padding:0.14rem 0.34rem;
+    .item{
+        width:100%;
+        height:0.52rem;
+        font-size: 0.28rem;
+        .fl{
+            color:#a8afac;
+            line-height: 0.52rem;
+        }
+        .fr{
+            color:#ff7d37;
+            line-height: 0.52rem;
+        }
+    }
+}
+.payMoneySum{
+    padding:0 0.34rem;
+    margin:0;
+    @include border(1px 0 0 0,#e3e3e3,solid);
+    .item{
+        height: 1.12rem;
+        .fl{
+            line-height: 1.12rem;
+        }
+        .fr{
+            line-height: 1.12rem;
+            font-size:0.38rem;
+        }
+    }
+}
+.paddingBottom7{
+    padding-bottom: 0.14rem;
+}
+.finish{
+    display: block;
+}
+// icon start
+.icon-xiayibu{
+    font-size:0.24rem;
+    color: #a8afac;
+    position:relative;
+    top:-2px;
+}
+.icon-tishi{
+    color:#1ccf8d;
+    font-size:0.24rem;
+    margin-right: 0.22rem;
+}
+// icon end
+body{
+    margin-bottom:1.2rem;
+}
+.dropload-down{
+    display: none;
+}

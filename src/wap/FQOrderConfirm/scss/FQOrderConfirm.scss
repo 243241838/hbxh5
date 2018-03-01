@@ -1,0 +1,297 @@
+@charset 'utf-8';
+@import '../../../assets/scss/usage/layout/reset.scss';
+@import '../../../assets/scss/usage/layout/common.scss';
+@import '../../../assets/fonts/iconfont.css';
+//
+.isshow{
+    padding-top:0.88rem;
+}
+html, body{
+    width:100%;
+    height:100%;
+}
+#body{
+    padding-bottom:1.18rem;
+}
+.head_list{
+    width:100%;
+     background: #fff;
+     padding-left: 0.36rem;
+     margin-bottom:0.24rem;
+    .item{
+         width:100%;
+         height:2.18rem;
+         @include border(0 0 1px 0,#e3e3e3,solid);
+         .left{
+             div:first-child{
+                 width:1.46rem;
+                 height:1.46rem;
+                 @include border(1px,#e3e3e3,solid,0.42rem);
+                 margin-right:0.37rem;
+             }
+             div{
+                 font-size:0.36rem;
+                 color:#484c4a;
+             }
+             img{
+                width:1.5rem;
+               // height:0.7rem;
+            }
+         }
+         .right{
+             .iconfont{
+                font-size:0.2em;
+                color:#e3e3e3;
+             }
+             span{
+                 color:#a8afac;
+                 font-size:0.28rem;
+             }
+             .money{
+                margin-right:0.16rem;
+                font-size:0.38rem;
+                color:#5a5e5c;
+             }
+         }
+    }
+    >a{
+       >div:last-child{
+            width:100%;
+            height:0.88rem;
+            padding-right:0.36rem;
+            >div:first-child{
+                color:#2ece90;
+                font-size:0.28rem;
+            }
+            >div:last-child{
+                color:#e3e3e3;
+                font-size:0.2rem!important;
+            }
+        }
+    }
+    .font_s{
+        font-size:0.20rem !important;
+    }
+}
+.center_list{
+    width:100%;
+     background: #fff;
+     padding-left:0.36rem;
+     padding-top:0.26rem;
+     font-size:0.28rem;
+     margin-bottom: 0.24rem;
+     >div:first-child{
+         height:0.63rem;
+          padding-right:0.36rem;
+     }
+     >div:nth-child(2){
+         height:0.63rem;
+         margin-bottom:0.07rem;
+          padding-right:0.36rem;
+     }
+     >div:nth-child(3){
+         height:0.72rem;
+         padding:0 0.27rem;
+         margin-right:0.36rem;
+         @include border(1px 1px 1px 1px, #e3e3e3, solid);
+         background: #f5f5f5;
+         margin-bottom:0.25rem;
+     }
+     >div:nth-child(4){
+         height:0.5rem;
+         padding-right:0.36rem;
+         
+     }
+     >div:nth-child(5){
+         line-height: 0.51rem;
+         padding-right:0.36rem;
+         padding-bottom:0.27rem;      
+         font-size:0.26rem;   
+         @include border(0 0 1px 0, #e3e3e3, solid);
+      }
+      >div:last-child{
+         height:1.15rem;
+         padding-right:0.36rem;
+      }
+     .left{
+            color:#a8afac;
+     }
+     .right{
+         color:#5a5e5c;
+     }
+      >div:nth-child(3){
+          .right{
+              color:#a8afac;
+          }
+      }
+     .green{
+        color:#2ece90;
+    }
+    .orange{
+        color:#ff7d37;
+    }
+}
+.bottom_list{
+     width:100%;
+     background: #fff;
+     padding:0.25rem 0.36rem;
+     font-size:0.28rem;
+     .item{
+         width:100%;
+         height:0.62rem;
+         .left{
+             color:#a8afac;
+         }
+         .right{
+             color:#5a5e5c;
+         }
+     }
+}
+//地址
+.location{
+    width:100%;
+    padding-top:0.22rem;
+    >div:first-child{
+        width:100%;
+        height:0.12rem;
+        background: url(../images/write.png) repeat-x;
+    }
+    .no_location{
+        padding:0 0.36rem;
+        height:1.11rem;
+        background: #fff;
+        div:first-child{
+            color:#a8afac;
+            font-size:0.28rem;
+        }
+        div:last-child{
+            color:#e3e3e3;
+            font-size:0.20rem;
+        }
+    }
+    .y_location{
+        padding:0 0.36rem;
+        padding-top:0.12rem;
+        padding-bottom:0.36rem;
+        height:auto;
+        background: #fff;
+        >div:first-child{
+            width:0.63rem;
+            .iconfont{
+                color:#5a5e5c;
+                font-size:0.5rem;
+            }
+        }
+        .name{
+            width:100%;
+            padding:0 0.5rem 0 0.27rem;
+            >div:first-child{
+                width:100%;
+                height:0.82rem;
+                font-size:0.28rem;
+                color:#5a5e5c;
+            }
+            >div:last-child{
+                width:100%;
+                line-height:0.41rem;
+                font-size:0.26rem;
+                color:#5a5e5c;
+            }
+        }
+        >div:last-child{
+            width:0.50rem;
+            .iconfont{
+                color:#e3e3e3;
+                font-size:0.2rem;
+            }
+        }
+        .location{
+            overflow: hidden;
+             display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+        }
+    }
+}
+// 阅读协议
+.read{
+    width:100%;
+    height:1.6rem;
+    padding:0 0.36rem;
+    padding-top:0.2rem;
+    font-size:0.24rem;
+    line-height: 0.5rem;
+    color:#686c6a;
+}
+//底部
+.foot{
+    width:100%;
+    height:1.18rem;
+    background: #fff;
+    padding-left:0.36rem;
+    position: fixed !important;
+    left:0;
+    bottom: 0;
+    // @include border(1px 0 0 0, #e3e3e3, solid);
+    .money{
+        font-weight: bold;
+        color:#ff7d29;
+        font-size:0.34rem;
+        span:first-child{
+            font-size:0.22rem;
+            position: relative;
+            top:0.02rem;
+        }
+    }
+    .center{
+        width:3.64rem;
+        margin-right:0.36rem;
+        .box{
+            height:0.72rem;
+            font-size:0.32rem;
+            color:#5a5e5c;
+            >div{
+                width:97%;
+                height:98%;
+                @include border(1px, #b0b6b3, solid,0.1rem);
+            }
+        }
+        >div:first-child{
+            margin-right:0.25rem;
+        }
+        .green{
+            @include border(1px, #2dce8f, solid,0.1rem);
+            color:#2dce8f;
+        }
+    }
+    .right{
+        width:2.98rem;
+        background: #2dce8f;
+        color:#fff;
+        font-size:0.36rem;
+    }
+}
+.img_Detail{
+    width:100%;
+    height:100%;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 10;
+    padding-top:15%;
+    text-align: center;
+    img{
+        padding-top:30%;
+        width:80%;
+        display: block;
+        margin:0 auto;
+        margin-bottom:0.2rem;
+    }
+    .iconfont{
+        font-size:0.54rem;
+        color:#fff;
+        margin-top:0.2rem;
+    }
+}

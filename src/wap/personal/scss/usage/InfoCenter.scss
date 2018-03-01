@@ -1,0 +1,21 @@
+@charset "utf-8";
+@import "../../common/common.scss";
+.Info_body{
+	background: #f5f5f5;
+}
+.Info_box{
+    padding-top:0.88rem ;
+    &.isWeiXin{
+		padding-top:0;
+	}
+    .container{
+        padding:0.2rem 0.36rem;
+        .Info_title{
+            padding-left:0.4rem;
+            margin-bottom:0.4rem;
+            font-weight:700;
+            font-size:0.36rem;
+            @include border(0 0 0 0.28rem, #f60, solid);
+        }
+    }
+}

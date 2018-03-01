@@ -1,0 +1,90 @@
+@charset "utf-8";
+@import "../../../assets/scss/usage/layout/reset.scss";
+@import "../../../assets/scss/usage/layout/common.scss";
+@import "../../../assets/fonts/iconfont.css";
+.isShow{
+    padding-top:0.88rem;
+}
+.text{
+    width:100%;
+    height:12.06rem;
+    background: url(../images/background.jpg) no-repeat center;
+    background-size:100% 100%;
+    padding:3.13rem 0.36rem 0;
+    //老用户
+    &.text1{
+        background: url(../images/background1.jpg) no-repeat center;
+        background-size:100% 100%;
+        padding:1.32rem 0.36rem 0;
+        .data{
+            margin-bottom:6.2rem;
+        }
+    }
+    .data{
+        width:6.04rem;
+        height:1.52rem;
+        margin:0 auto;
+        color:#fff;
+        margin-bottom:4.43rem;
+        >div:first-child{
+            font-size:0.36rem;
+            line-height: 0.4rem;
+            color:#fff;
+            margin-bottom: 0.24rem;
+            text-align: center;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            overflow: hidden;
+           
+            span{
+                margin-left:0.28rem;
+            }
+        }
+        >div:last-child{
+            font-size:0.32rem;
+            line-height: 0.32rem;
+       }
+    }
+    .btn{
+        width:100%;
+        height: 0.85rem;
+        background: #ffdf01;
+        color:#673230;
+        font-size:0.36rem;
+        line-height: 0.85rem;
+        text-align: center;
+        @include border-radius(0.1rem);
+    }
+}
+//弹窗
+.alert{
+    padding-top:2.1rem;
+    &.padding_top{
+        padding-top:20%;
+    }
+    .center{
+        width:100%;
+        height:6.58rem;
+        background: url(../images/alert.png) no-repeat center;
+        background-size:100% 100%;
+        position: relative;
+        .close{
+            width:0.4rem;
+            height:0.4rem;
+            margin-top:0.79rem;
+            margin-right:0.63rem;
+        }
+        .btn{
+            width:100%;
+            height:1rem;
+            padding:0 0.77rem;
+            position: absolute;
+            left:0;
+            bottom:0.564rem;
+            >div:first-child{
+                margin-right:0.35rem;
+            }
+        }
+    }
+}
