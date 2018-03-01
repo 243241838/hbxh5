@@ -606,7 +606,6 @@ export default {
                 }
                 request.getLianLianAuthInfo(obj1, (response) => {
                     //console.log(response.data)
-                    //console.log(response.data)
                     if (response.data.respCode === '000000') {
                         if (response.data.output.authSts === 0) {
                             window.location.href='./paymentlianlian.html';
